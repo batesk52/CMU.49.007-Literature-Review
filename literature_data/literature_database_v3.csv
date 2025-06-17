@@ -1,0 +1,56 @@
+Category:,Reference,Year,Location,"Charge Storage Capacity, mC/cm^2 ","Charge Injection Capacity, mC/cm^2","Transmittance, %","Resistivity, Ohm/square","Maximum Electrode Use, days",Electrode Material,"Substrate
+",GABA Sensing? (Y/N),Substrate
+Instruction,"Add the Paper Reference, for example: Doe et al., 2024",Supply the year of publication. Do So in YYYY format. Only supply that information.,"Specify the college or research institution in which this research was performed. Simply supply the city, state or city, country if outside of the US. Keep the response simple and only to what I've asked.","Supply the charge storage capacity, CSC, in mC / cm^2. If you find the CSC given in another unit of measure, convert it and supply it here. If you are unsure about your response, please leave it blank.","Supply the charge injection capacity, CIC, in mC / cm^2. If you find the CSC given in another unit of measure, convert it and supply it here. If you are unsure about your response, please leave it blank.","Supply the transmittance in percentage. If you see it as a decimal, convert it to a percentage. If you are unsure, leave the row empty. ","Add the sheet resistance of the device, in Ohms per square. If the voltage is given in measured resistance, convert to sheet resistance with 4.531. If you are unsure, leave the row empty. ","Enter the maximum usable days for the electrode mentioned in the paper. If another unit is given, convert to days. If you are unsure, leave it empty.","Supply the electrode material. Ex. Gold, PEDOT:PSS, ITO. Err on the side of brief when explaining. If you can't write a simple answer, leave it blank.","Supply the substrate material. Ex.PMDS, Parylene C, SU-8. Err on the side of brief when explaining. If you can't write a simple answer, leave it blank.","If GABA is sensed in the paper, enter Y. Else, enter N. If you are unsure, leave it blank. ",
+,"Doe et al., 2024",2024,"Cambridge, MA",,,,,,Gold,,,
+,"Smith et al., 2023",2023,"New York, NY",,,,,,PEDOT:PSS,,,
+,"Johnson et al., 2022",2022,"London, UK",,,,,,ITO,,,
+,"Brown et al., 2021",2021,"Paris, France",,,,,,PMDS,,,
+,"Davis et al., 2020",2020,"Berlin, Germany",,,,,,Parylene C,,,
+,"Miller et al., 2019",2019,"Sydney, Australia",,,,,,SU-8,,,
+,"Wilson et al., 2018",2018,"Tokyo, Japan",,,,,,,,,
+,"Moore et al., 2017",2017,"Beijing, China",,,,,,,,,
+,"Taylor et al., 2016",2016,"Moscow, Russia",,,,,,,,,
+,"Anderson et al., 2015",2015,"Delhi, India",,,,,,,,,
+,"Gao et al., 2015",2015,"Harvard University, Cambridge, Massachusetts",,,,,,Silicon nanowire,,N,Polyethylene glycol (PEG)
+,"Hongyan Gao et al., 2024",2024,"University of Massachusetts, Amherst, MA",,,,,,Graphene,,,SU-8
+,"B. ILIC et al., 2000",2000,"University of Illinois at Chicago, USA",,,,,,Platinum black,,,Silicon substrates
+,"Minsung Kim et al., 2025",2025,"Northwestern University, Evanston, IL, USA",,,,,,,,,
+,"Duygu Kuzum et al., 2015",2015,"University of Pennsylvania, Philadelphia, PA",,,,,,Graphene,,,Polyimide (Kapton)
+,"Sagnik Middy et al., 2021",2021,"University of Cambridge, UK",,,,,,PEDOT:PSS,,,"Au, Parylene C"
+,"Middy et al., 2021",2021,"University of Cambridge, UK",,,,,,PEDOT:PSS,,,Parylene C
+,"Sagnik Middya et al., 2021",2021,"University of Cambridge, Cambridge, UK",,,>75%,86 Ohm/square,,"Poly(3,4-ethylenedioxythiophene) doped with polystyrene sulfonate (PEDOT:PSS)",,,Glass
+,"Sagnik Middya et al., 2025",2025,"University of Cambridge, Cambridge, UK",,,,,,"poly(3,4-ethylenedioxythiophene) doped with polystyrenesulfonate (PEDOT:PSS)",,,parylene C
+,Sagnik Middya et al.,,"University of Cambridge, Cambridge, UK",,,,,,PEDOT:PSS,,,Parylene C
+,"Oldroyd, Gurke, Malliaras, 2023",2023,"University of Cambridge, Cambridge, UK",11.3,4.2,,,800,PEDOT:PSS,,,Parylene C
+,"Oldroyd et al., 2024",2024,"University of Cambridge, Cambridge, UK",,,,,,PEDOT:PSS,,,"parylene-C (PaC), gold"
+,"Kalmykov et al., Sci. Adv. 2019; 5 : eaax0729",2019,"Carnegie Mellon University, Pittsburgh, PA",,,,,,Au,,,SU-8
+,"Park et al., 2014",2014,"University of Wisconsin—Madison, Madison, Wisconsin",,,490,76,,Graphene,,,Parylene C
+,"Direct inhibition of tumor hypoxia response with synthetic transcriptional repressors, Zeyu Qiao et al., 2024",2024,"The University of Chicago, Chicago, IL, USA",,,,,,,,,
+,"Aline F. Renz, Jihyun Lee, Klas Tybrandt, Maciej Brzezinski, Dayra A. Lorenzo, Mouna Cerra Cheraka, Jaehong Lee, Fritjof Helmchen, Janos Vörös, and Christopher M. Lewis, Opto-E-Dura: A Soft, Stretchable ECoG Array for Multimodal, Multiscale Neuroscience, Advanced Healthcare Materials, 2020",2020,"ETH Zurich, Zurich, Switzerland; Linköping University, Norrköping, Sweden; University of Zurich, Zurich, Switzerland",,,,,,"Platinum particles, Gold nanowires",,,Polydimethylsiloxane (PDMS)
+,"Schuhmann Jr., T.G., Zhou, T., Hong, G., Lee, J.M., Fu, T.M., Park, H.G., Lieber, C.M. Syringe-injectable Mesh Electronics for Stable Chronic Rodent Electrophysiology. J. Vis. Exp. (137), e58003, doi:10.3791/58003 (2018).",2018,"Harvard University, Cambridge, MA",,,,,,,,,
+,"ZijunShao+,HeZhao+,KellyE.Dunham, QunCao,Nickolay V.Lavrik, andB.JillVenton*, Angew .Chem. Int. Ed. 2024, 63, e202405634",2024,"University of Virginia, Charlottesville, VA",,,,,,Carbon,,N,
+,"Shi et al., 2024",2024,"University of Chicago, Chicago, IL",,,,,,,,,
+,"Changhao Xu et al., 2024",2024,"California Institute of Technology, Pasadena, CA, USA",,,,,100,"Prussian blue (PB), nickel hexacyanoferrate (NiHCF)",,N,polyimide
+,"de Oliveira Filho et al., 2023",2023,"Thuwal, Saudi Arabia",,,,,,,,N,
+,"Donahue et al., 2018",2018,"Gardanne, France; Marseille, France; New York, NY, USA; Budapest, Hungary; Szeged, Hungary; Cambridge, United Kingdom",,,,,,PEDOT:PSS,,,Parylene C
+,"Driscoll et al., 2024",2024,"Cambridge, MA, USA",0.8,0.3,,,,CNT yarn,,,Polymers and non-magnetic carbon-based conductors
+,"Gao et al., 2015",2015,"Cambridge, Massachusetts, United States",,,,,,Silicon nanowire,,N,PEG
+,"Hongyan Gao et al., 2024",2024,"Amherst, MA",,,,,,Graphene,,,SU-8
+,Sensors & Actuators: B. Chemical 399 (2024) 134775,2024,"Potsdam, NY, USA",,,,,,AuNPs modified electrode,,,ITO
+,"Dion Khodagholy et al., 2011",2011,"Gardanne, France",,,,,,PEDOT:PSS,,Y,Parylene C
+,"Xinyan Cui, David C. Martin, 2003",2003,"Ann Arbor, MI, USA",,,,,,PEDOT,,,Neural microelectrode arrays
+,Sensors & Actuators: B. Chemical 399 (2024) 134775,2024,"Potsdam, NY, USA",,,,,,AuNPs,,,ITO
+,Middya et al.,,"Cambridge, UK",,,,,,PEDOT:PSS,,,Parylene C
+,"Sagnik Middya et al., 2024",2024,"University of Cambridge, Cambridge, UK",,,,,,PEDOT:PSS,,,Parylene C
+,"Xinyan Cui et al., 2003",2003,"The University of Michigan, Ann Arbor, MI, USA",,,,,,"Poly(3,4-ethylenedioxythiophene) (PEDOT)",,,
+,"Sagnik Middya et al., 2024",2024,"University of Cambridge, Cambridge, UK",,,,,,PEDOT:PSS,,,Parylene C
+,"Sagnik Middya et al., 2024",2024,"University of Cambridge, Cambridge, UK",,,,,,PEDOT:PSS,,,Parylene C
+,"Momin et al., 2024",2024,"University Park, PA",90 mC/cm^2,3 mC/cm^2,,,,"poly(3,4-ethylenedioxythiophene):polystyrene sulfonate (PEDOT:PSS)",,,Polydimethylsiloxane (PDMS)
+,"Kalmykov et al., 2019",2019,"Carnegie Mellon University, Pittsburgh, PA, USA",,,,,,Au,,,SU-8
+,"Sanjeev Billa et al., 2024",2024,"Louisiana Tech University, Ruston, LA",,,,,,Pt UME,,Y,
+,"Billa et al., 2022",2022,"Louisiana Tech University, Ruston, LA",,,,,11 days,Platinum,,Y,Silicon
+,"Hong et al., 2018",2018,"Harvard University, Cambridge, Massachusetts, USA",,,,,,,,,
+,"Nicolaie Moldovana et al., 2024",2024,"Louisiana Tech University, Ruston, LA",,,,300 Ohm,,Pt,,Y,Si
+,Sensors & Actuators: B. Chemical 337 (2021) 129795,2021,"Louisiana Tech University, Ruston, LA, United States",,,,,,Platinum,,Y,Silicon
+,"Neudorfer et al., 2020",2020,"University of Toronto, Canada",,,,,,,,,
+,"Xinyan Cui, David C. Martin, b, c, *a, Macromolecular Science and Engineering Center, The University of Michigan, Ann Arbor, MI 48109, USA",2002,"The University of Michigan, Ann Arbor, MI, USA",,,,,,"Poly(3,4-ethylenedioxythiophene) (PEDOT)",,,"Poly(3,4-ethylenedioxythiophene) (PEDOT)/poly(styrenesulfonate) (PSS)"
