@@ -30,11 +30,12 @@ PARENT_DECK = "CMU.65.001 - Literature Review"
 libraries = [
 
     "63.003 Literature Review for CMU.44.004",
-    "65.006 Qual Aim 1 - SCS, DRGS",
-    "65.007 Qual Aim 2 - GABA, GLU NT Sensing",
-    "65.008 Qual Aim 3 - ML-Enhanced Biosensing",
-    "79.010 Nociception",
-    "79.020 GABA and GLU Sensing"
+    "63.005 Review for CMU.44.006",
+    "63.006 Qual Aim 1 - SCS, DRGS",
+    "63.007 Qual Aim 2 - GABA, GLU NT Sensing",
+    "63.008 Qual Aim 3 - ML-Enhanced Biosensing",
+    "63.009 Literature Review for CMU.44.001",
+    "63.010 Literature Review for CMU.44.007"
 ]
 
 # %%
