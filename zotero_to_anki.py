@@ -22,31 +22,19 @@ from dotenv import load_dotenv
 from pyzotero import zotero
 
 # %%
+
+# name of parent deck
+PARENT_DECK = "CMU.65.001 - Literature Review"
+
 # libraries I want to use
 libraries = [
-    "63.001 Neural Engineering and Signal Processing",
-    "63.002 Nano-Scale Bioelectronics",
+
     "63.003 Literature Review for CMU.44.004",
-    "63.004 Releasing Parylene C from Wafer",
-    "65.006 Qual Aim 1 - Fab GABA, GLU Sensor",
-    "65.007 Qual Aim 2 - Chronic NT Sensing",
+    "65.006 Qual Aim 1 - SCS, DRGS",
+    "65.007 Qual Aim 2 - GABA, GLU NT Sensing",
     "65.008 Qual Aim 3 - ML-Enhanced Biosensing",
-    "73.001 Pt Black Deposition",
-    "79.002 Biosensors",
-    "79.003 Biocompatibility",
-    "79.006 Bionanomaterials",
-    "79.008 Neuromodulation",
-    "79.009 Electrochemistry",
     "79.010 Nociception",
-    "79.012 Neuroregeneration",
-    "79.013 Spike Sorting",
-    "79.015 Neuroscience",
-    "79.016 Surgery",
-    "79.020 GABA and GLU Sensing",
-    "79.022 Transparent Electrodes",
-    "79.024 Polyimide Devices",
-    "79.025 Stimulation Electrodes",
-    "79.026 Platinum Black Electrodes"
+    "79.020 GABA and GLU Sensing"
 ]
 
 # %%
@@ -147,9 +135,9 @@ def parse_cards(txt):
     return out
 
 # ─── Main ───────────────────────────────────────────────────────────────────
-def run_pipeline(collection_name):
+def run_pipeline(collection_name, parent_deck):
 
-    PARENT_DECK    = f"CMU.49.007 Automated Literature Review::{collection_name}"
+    PARENT_DECK    = f"{parent_deck}::{collection_name}"
     vprint(f"Looking for collection: {collection_name}")
 
     # error handling for finding collections
@@ -239,4 +227,4 @@ def run_pipeline(collection_name):
             push_card(deck, q, a)
 
 for collection_name in libraries:
-    run_pipeline(collection_name)
+    run_pipeline(collection_name,PARENT_DECK)
