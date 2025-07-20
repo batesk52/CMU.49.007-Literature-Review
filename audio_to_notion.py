@@ -18,8 +18,6 @@ class AudioToNotionProcessor:
             folder_path: Path to the folder containing MP3 files
             state_file: JSON file to track processed files
         """
-        load_dotenv()
-        
         self.folder_path = Path(folder_path)
         self.state_file = Path(state_file)
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -71,13 +69,31 @@ class AudioToNotionProcessor:
         """Identify new or modified MP3 files."""
         current_files = self._get_mp3_files()
         new_files = []
+        print(f"DEBUG: Checking {len(current_files)} MP3 files for changes...")
         
         for file_path in current_files:
             file_hash = self._get_file_hash(file_path)
-            if (str(file_path) not in self.processed_files or 
-                self.processed_files[str(file_path)] != file_hash):
+            file_path_str = str(file_path)
+            current_filename = os.path.basename(file_path_str)
+            
+            # Check if this file was processed under any path format
+            found_in_state = False
+            for state_path, state_hash in self.processed_files.items():
+                # Extract just the filename for comparison
+                # Handle both Windows and Unix path separators
+                state_filename = state_path.replace('\\', '/').split('/')[-1]
+                
+                # Check if it's the same file (by filename only, ignore hash changes)
+                # This prevents reprocessing files that have already been handled
+                if state_filename == current_filename:
+                    found_in_state = True
+                    break
+            
+            if not found_in_state:
                 new_files.append(file_path)
+                print(f"DEBUG: File {file_path.name} is NEW (hash: {file_hash[:8]}...)")
         
+        print(f"DEBUG: Found {len(new_files)} new/modified files")
         return new_files
     
     def _split_audio_if_needed(self, file_path: Path, max_bytes: int = 25 * 1024 * 1024) -> List[Path]:
@@ -411,6 +427,7 @@ class AudioToNotionProcessor:
     
     def process_new_files(self) -> List[str]:
         """Process all new MP3 files and return list of created page IDs."""
+        print("DEBUG: process_new_files() called")
         new_files = self._get_new_files()
         
         if not new_files:
@@ -425,8 +442,11 @@ class AudioToNotionProcessor:
         
         for file_path in new_files:
             try:
+                print(f"\nDEBUG: Processing file {file_path.name}...")
                 # Transcribe the audio
+                print(f"DEBUG: Starting transcription for {file_path.name}")
                 transcript = self._transcribe_audio(file_path)
+                print(f"DEBUG: Transcription complete, got {len(transcript)} characters")
                 
                 # Summarize the transcript
                 summary = self._summarize_text(transcript)
@@ -435,8 +455,18 @@ class AudioToNotionProcessor:
                 page_id = self._create_notion_page(file_path.name, transcript, summary)
                 created_pages.append(page_id)
                 
-                # Update state
-                self.processed_files[str(file_path)] = self._get_file_hash(file_path)
+                # Update state - preserve original path format if file exists
+                file_hash = self._get_file_hash(file_path)
+                file_path_str = str(file_path)
+                stored_path = file_path_str
+                
+                # Check if this filename already exists in state
+                for state_path in self.processed_files:
+                    if os.path.basename(state_path) == os.path.basename(file_path_str):
+                        stored_path = state_path  # Keep the original format
+                        break
+                
+                self.processed_files[stored_path] = file_hash
                 
                 print(f"✓ Successfully processed: {file_path.name}")
                 
@@ -461,11 +491,56 @@ class AudioToNotionProcessor:
         }
 
 
+def convert_windows_to_wsl_path(windows_path: str) -> str:
+    """Convert Windows path to WSL path."""
+    # Handle different Windows path formats
+    if windows_path.startswith("D:"):
+        # Convert D:\ or D:/ to /mnt/d/
+        wsl_path = windows_path.replace("D:\\", "/mnt/d/").replace("D:/", "/mnt/d/")
+    elif windows_path.startswith("C:"):
+        # Convert C:\ or C:/ to /mnt/c/
+        wsl_path = windows_path.replace("C:\\", "/mnt/c/").replace("C:/", "/mnt/c/")
+    else:
+        # If it doesn't start with a Windows drive letter, return as is
+        return windows_path
+    
+    # Replace backslashes with forward slashes
+    wsl_path = wsl_path.replace("\\", "/")
+    
+    return wsl_path
+
+def find_accessible_path(original_path: str) -> str:
+    """Find an accessible path, trying both Windows and WSL formats."""
+    # First try the original path
+    if os.path.exists(original_path):
+        return original_path
+    
+    # If on WSL, try converting Windows path to WSL format
+    if os.name == 'posix' and (original_path.startswith("D:") or original_path.startswith("C:")):
+        wsl_path = convert_windows_to_wsl_path(original_path)
+        if os.path.exists(wsl_path):
+            print(f"Using WSL path: {wsl_path}")
+            return wsl_path
+    
+    # If neither works, return the original path
+    return original_path
+
 def main():
     """Main function to run the audio processor."""
+    print("Main function started")
+    
+    # Load environment variables
+    load_dotenv()
+    print("Environment loaded")
+    
     # Configuration
     FOLDER_PATH = os.getenv("AUDIO_FOLDER_PATH", "./audio_files")
     STATE_FILE = "data/audio_processing_state.json"
+    
+    # Try to find accessible path
+    print(f"Original path from env: {FOLDER_PATH}")
+    FOLDER_PATH = find_accessible_path(FOLDER_PATH)
+    print(f"Using path: {FOLDER_PATH}")
     
     try:
         # Initialize processor

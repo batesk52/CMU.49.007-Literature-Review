@@ -958,3 +958,29 @@
 2025-07-19 21:12:05,311 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'what role does dopamine play'
 2025-07-19 21:12:05,311 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'what role does dopamine play' using OpenAI
 2025-07-19 21:12:05,973 - semantic_search_v2 - INFO - semantic_search:319 - Found 2 relevant files (threshold: 0.4)
+2025-07-20 13:48:20,167 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-20 13:48:20,167 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-20 13:48:20,168 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-20 13:48:20,170 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 22 cached embeddings
+2025-07-20 13:48:20,170 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-20 13:48:20,170 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-20 13:48:20,170 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-20 13:48:20,172 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 22 cached embeddings
+2025-07-20 13:48:20,172 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-20 13:48:20,172 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-20 13:48:20,172 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'What role does dopamine play?'
+2025-07-20 13:48:20,172 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'What role does dopamine play?' using OpenAI
+2025-07-20 13:48:20,172 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.7)
+2025-07-20 13:48:24,095 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-20 13:48:24,095 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-20 13:48:24,095 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-20 13:48:24,097 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 22 cached embeddings
+2025-07-20 13:48:24,097 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-20 13:48:24,098 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-20 13:48:24,098 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-20 13:48:24,100 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 22 cached embeddings
+2025-07-20 13:48:24,100 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-20 13:48:24,100 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-20 13:48:24,100 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'What role does dopamine play?'
+2025-07-20 13:48:24,100 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'What role does dopamine play?' using OpenAI
+2025-07-20 13:48:24,100 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.7)
