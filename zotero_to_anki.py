@@ -47,55 +47,29 @@ ZOTERO = zotero.Zotero(
     "user",  # Force to "user" to avoid .env parsing issues
     os.getenv("ZOTERO_API_KEY")
 )
-# Determine the correct Anki URL based on environment
-def get_anki_url():
-    """Intelligently determine Anki URL based on environment (Windows, Linux, WSL)"""
-    # Try localhost first (works on Windows and Linux with Anki running locally)
-    test_urls = ["http://127.0.0.1:8765", "http://localhost:8765"]
-    
-    # Check if we're in WSL
-    try:
-        with open('/proc/version', 'r') as f:
-            if 'microsoft' in f.read().lower():
-                # We're in WSL, get Windows host IP
-                try:
-                    windows_host = subprocess.check_output(
-                        "cat /etc/resolv.conf |  grep nameserver | awk '{print $2}'", 
-                        shell=True
-                    ).decode().strip()
-                    test_urls.insert(0, f"http://{windows_host}:8765")
-                    if VERBOSE:
-                        print(f"Detected WSL environment, trying Windows host at {windows_host}")
-                except:
-                    pass
-    except:
-        pass
-    
-    # Test each URL
-    for url in test_urls:
-        try:
-            r = requests.post(url, json={"action":"version","version":6}, timeout=1)
-            if r.status_code == 200:
-                if VERBOSE:
-                    print(f"AnkiConnect found at: {url}")
-                return url
-        except:
-            continue
-    
-    # Default fallback
-    if VERBOSE:
-        print("\n⚠️  Warning: Could not connect to AnkiConnect.")
-        print("Did you open Anki?")
-        print("\nPlease ensure:")
-        print("1. Anki is running")
-        print("2. AnkiConnect addon is installed (Tools → Add-ons → Get Add-ons → Code: 2055492159)")
-        print("3. Restart Anki after installing the addon\n")
-    return "http://127.0.0.1:8765"
-
 VERBOSE        = True   # ← flip to False to silence output
 OPENAI_URL     = "https://api.openai.com/v1/chat/completions"
 OPENAI_KEY     = os.getenv("OPENAI_API_KEY")
-ANKI_URL       = get_anki_url()  # Auto-detect Anki URL after VERBOSE is set
+# Auto-detect Anki URL for WSL
+import platform
+if platform.system() == "Linux":
+    try:
+        with open('/proc/version', 'r') as f:
+            if 'microsoft' in f.read().lower():
+                # Running in WSL, use Windows host IP
+                windows_host = subprocess.check_output(
+                    "cat /etc/resolv.conf | grep nameserver | awk '{print $2}'", 
+                    shell=True
+                ).decode().strip()
+                ANKI_URL = f"http://{windows_host}:8765"
+                if VERBOSE:
+                    print(f"WSL detected, using Windows host: {windows_host}")
+            else:
+                ANKI_URL = "http://127.0.0.1:8765"
+    except:
+        ANKI_URL = "http://127.0.0.1:8765"
+else:
+    ANKI_URL = "http://127.0.0.1:8765"  # Windows/Mac
 
 H2M = html2text.HTML2Text();  H2M.ignore_links = True
 
