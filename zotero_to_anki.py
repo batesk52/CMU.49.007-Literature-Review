@@ -17,7 +17,7 @@
 
 
 # %% # ## imports
-import os, html2text, requests
+import os, html2text, requests, subprocess, platform
 from dotenv import load_dotenv
 from pyzotero import zotero
 
@@ -44,13 +44,58 @@ libraries = [
 load_dotenv()
 ZOTERO = zotero.Zotero(
     os.getenv("ZOTERO_USER_ID"),
-    os.getenv("ZOTERO_LIBRARY_TYPE", "user"),
+    "user",  # Force to "user" to avoid .env parsing issues
     os.getenv("ZOTERO_API_KEY")
 )
-ANKI_URL       = "http://127.0.0.1:8765"
+# Determine the correct Anki URL based on environment
+def get_anki_url():
+    """Intelligently determine Anki URL based on environment (Windows, Linux, WSL)"""
+    # Try localhost first (works on Windows and Linux with Anki running locally)
+    test_urls = ["http://127.0.0.1:8765", "http://localhost:8765"]
+    
+    # Check if we're in WSL
+    try:
+        with open('/proc/version', 'r') as f:
+            if 'microsoft' in f.read().lower():
+                # We're in WSL, get Windows host IP
+                try:
+                    windows_host = subprocess.check_output(
+                        "cat /etc/resolv.conf |  grep nameserver | awk '{print $2}'", 
+                        shell=True
+                    ).decode().strip()
+                    test_urls.insert(0, f"http://{windows_host}:8765")
+                    if VERBOSE:
+                        print(f"Detected WSL environment, trying Windows host at {windows_host}")
+                except:
+                    pass
+    except:
+        pass
+    
+    # Test each URL
+    for url in test_urls:
+        try:
+            r = requests.post(url, json={"action":"version","version":6}, timeout=1)
+            if r.status_code == 200:
+                if VERBOSE:
+                    print(f"AnkiConnect found at: {url}")
+                return url
+        except:
+            continue
+    
+    # Default fallback
+    if VERBOSE:
+        print("\n⚠️  Warning: Could not connect to AnkiConnect.")
+        print("Did you open Anki?")
+        print("\nPlease ensure:")
+        print("1. Anki is running")
+        print("2. AnkiConnect addon is installed (Tools → Add-ons → Get Add-ons → Code: 2055492159)")
+        print("3. Restart Anki after installing the addon\n")
+    return "http://127.0.0.1:8765"
+
+VERBOSE        = True   # ← flip to False to silence output
 OPENAI_URL     = "https://api.openai.com/v1/chat/completions"
 OPENAI_KEY     = os.getenv("OPENAI_API_KEY")
-VERBOSE        = True   # ← flip to False to silence output
+ANKI_URL       = get_anki_url()  # Auto-detect Anki URL after VERBOSE is set
 
 H2M = html2text.HTML2Text();  H2M.ignore_links = True
 
@@ -76,24 +121,55 @@ def fetch_items(coll_key, limit=100):
         start += limit
     return out
 
+OFFLINE_MODE = False  # Global flag for offline mode
+
 def existing_decks():
-    r = requests.post(ANKI_URL, json={"action":"deckNames","version":6}).json()
-    return set(r.get("result", []))
+    global OFFLINE_MODE
+    try:
+        r = requests.post(ANKI_URL, json={"action":"deckNames","version":6}, timeout=2)
+        r.raise_for_status()
+        return set(r.json().get("result", []))
+    except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
+        print("\n⚠️  Cannot connect to Anki!")
+        print("Did you open Anki?")
+        response = input("\nWould you like to continue in offline mode? Cards will be saved to a file. (y/n): ")
+        if response.lower() == 'y':
+            OFFLINE_MODE = True
+            print("\n✓ Continuing in offline mode. Cards will be saved to 'anki_cards_export.txt'")
+            return set()  # Return empty set in offline mode
+        else:
+            print("\nPlease:")
+            print("1. Open Anki")
+            print("2. Make sure AnkiConnect addon is installed")
+            print("3. Try running this script again\n")
+            exit(1)
+    except Exception as e:
+        print(f"\n❌ ERROR connecting to Anki: {str(e)}")
+        exit(1)
 
 def ensure_deck(deck):
-    requests.post(ANKI_URL, json={
-        "action":"createDeck","version":6,"params":{"deck":deck}
-    })
+    if not OFFLINE_MODE:
+        requests.post(ANKI_URL, json={
+            "action":"createDeck","version":6,"params":{"deck":deck}
+        })
 
 def push_card(deck, front, back):
-    requests.post(ANKI_URL, json={
-        "action":"addNotes","version":6,
-        "params":{"notes":[{
-            "deckName":deck,"modelName":"Basic",
-            "fields":{"Front":front,"Back":back},
-            "tags":["paper","notecard"]
-        }]}
-    })
+    if OFFLINE_MODE:
+        # Save to file in offline mode
+        with open("anki_cards_export.txt", "a", encoding="utf-8") as f:
+            f.write(f"\n{'='*60}\n")
+            f.write(f"Deck: {deck}\n")
+            f.write(f"Front: {front}\n")
+            f.write(f"Back: {back}\n")
+    else:
+        requests.post(ANKI_URL, json={
+            "action":"addNotes","version":6,
+            "params":{"notes":[{
+                "deckName":deck,"modelName":"Basic",
+                "fields":{"Front":front,"Back":back},
+                "tags":["paper","notecard"]
+            }]}
+        })
 
 def generate_cards(text):
     hdr = {"Content-Type":"application/json","Authorization":f"Bearer {OPENAI_KEY}"}
@@ -229,3 +305,12 @@ def run_pipeline(collection_name, parent_deck):
 
 for collection_name in libraries:
     run_pipeline(collection_name,PARENT_DECK)
+
+# Show completion message if in offline mode
+if OFFLINE_MODE:
+    print("\n✅ Offline mode complete!")
+    print("Cards have been saved to: anki_cards_export.txt")
+    print("\nTo import into Anki:")
+    print("1. Open the anki_cards_export.txt file")
+    print("2. Copy the cards you want to import")
+    print("3. In Anki, use File → Import or manually create the cards")
