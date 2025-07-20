@@ -1,0 +1,960 @@
+2025-07-19 16:35:35,349 - document_ingester - INFO - __init__:67 - Initialized document ingester with gemini provider
+2025-07-19 16:35:35,350 - document_ingester - INFO - process_directory:598 - Processing directory: /home/batesk52/CMU.49.007-Literature-Review/ /mnt/d/_sandbox/Lit_review/79.015 Neuroscience
+2025-07-19 16:35:35,350 - document_ingester - INFO - process_directory:608 - Found 0 supported documents
+2025-07-19 16:35:35,350 - document_ingester - INFO - _update_master_index:648 - Updating master index
+2025-07-19 16:35:35,351 - document_ingester - INFO - _update_master_index:693 - Master index updated successfully
+2025-07-19 16:37:57,580 - document_ingester - INFO - __init__:67 - Initialized document ingester with gemini provider
+2025-07-19 16:37:57,582 - document_ingester - INFO - process_directory:598 - Processing directory: /mnt/d/_sandbox/Lit_review/79.015 Neuroscience
+2025-07-19 16:37:57,634 - document_ingester - INFO - process_directory:608 - Found 15 supported documents
+2025-07-19 16:37:57,635 - document_ingester - INFO - process_directory:612 - Waiting 15 seconds before starting to avoid rate limits...
+2025-07-19 16:38:12,650 - document_ingester - INFO - process_directory:625 - Processing 1/15: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 16:38:12,759 - document_ingester - INFO - process_document:530 - Processing document: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 16:38:12,759 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 16:38:13,035 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:38:14,037 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:38:15,162 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:38:17,164 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:38:19,291 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:38:23,295 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:38:27,399 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:38:35,406 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:38:43,525 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:38:59,541 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:38:59,638 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md
+2025-07-19 16:39:09,639 - document_ingester - INFO - process_directory:625 - Processing 2/15: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:39:09,667 - document_ingester - INFO - process_document:530 - Processing document: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:39:09,668 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:39:09,860 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:39:10,861 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:39:11,973 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:39:13,976 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:39:16,085 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:39:20,089 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:39:24,199 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:39:32,208 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:39:40,330 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:39:56,346 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:39:56,368 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean.md
+2025-07-19 16:40:06,378 - document_ingester - INFO - process_directory:625 - Processing 3/15: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 16:40:06,407 - document_ingester - INFO - process_document:530 - Processing document: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 16:40:06,407 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 16:40:07,370 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:40:08,371 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:40:09,496 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:40:11,498 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:40:13,603 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:40:17,607 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:40:21,709 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:40:29,717 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:40:37,840 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:40:53,857 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:40:53,878 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/unknown_npgrj_nn_1525_12631268.md
+2025-07-19 16:41:03,888 - document_ingester - INFO - process_directory:625 - Processing 4/15: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 16:41:03,973 - document_ingester - INFO - process_document:530 - Processing document: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 16:41:03,973 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 16:41:04,196 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:41:05,197 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:41:06,310 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:41:08,312 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:41:10,430 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:41:14,435 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:41:18,553 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:41:26,559 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:41:34,677 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:41:50,693 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:41:50,771 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md
+2025-07-19 16:42:00,781 - document_ingester - INFO - process_directory:625 - Processing 5/15: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 16:42:00,831 - document_ingester - INFO - process_document:530 - Processing document: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 16:42:00,831 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 16:42:02,798 - document_ingester - ERROR - _extract_pdf_content:170 - Failed to extract PDF content: EOF marker not found
+2025-07-19 16:42:12,808 - document_ingester - INFO - process_directory:625 - Processing 6/15: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 16:42:12,967 - document_ingester - INFO - process_document:530 - Processing document: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 16:42:12,967 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 16:42:13,252 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:42:14,253 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:42:15,363 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:42:17,365 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:42:19,469 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:42:23,473 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:42:27,592 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:42:35,600 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:42:43,722 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:42:59,738 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:42:59,898 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md
+2025-07-19 16:43:09,908 - document_ingester - INFO - process_directory:625 - Processing 7/15: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 16:43:09,958 - document_ingester - INFO - process_document:530 - Processing document: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 16:43:09,958 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 16:43:10,492 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:43:11,493 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:43:12,594 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:43:14,596 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:43:16,702 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:43:20,706 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:43:24,822 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:43:32,830 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:43:37,406 - document_ingester - INFO - __init__:67 - Initialized document ingester with openai provider
+2025-07-19 16:43:37,426 - document_ingester - INFO - process_document:530 - Processing document: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:43:37,426 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:43:40,221 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean_1.md
+2025-07-19 16:43:40,952 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:43:53,900 - document_ingester - INFO - __init__:67 - Initialized document ingester with openai provider
+2025-07-19 16:43:53,901 - document_ingester - INFO - process_directory:598 - Processing directory: /mnt/d/_sandbox/Lit_review/79.015 Neuroscience
+2025-07-19 16:43:53,953 - document_ingester - INFO - process_directory:608 - Found 15 supported documents
+2025-07-19 16:43:53,953 - document_ingester - INFO - process_directory:612 - Waiting 15 seconds before starting to avoid rate limits...
+2025-07-19 16:43:56,968 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:43:57,010 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/x_nrn1105-henchindd.md
+2025-07-19 16:44:07,019 - document_ingester - INFO - process_directory:625 - Processing 8/15: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 16:44:07,072 - document_ingester - INFO - process_document:530 - Processing document: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 16:44:07,072 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 16:44:07,780 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:44:08,782 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:44:08,954 - document_ingester - INFO - process_directory:625 - Processing 1/15: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 16:44:09,057 - document_ingester - INFO - process_document:530 - Processing document: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 16:44:09,057 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 16:44:09,902 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:44:11,905 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:44:14,013 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:44:14,450 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits_1.md
+2025-07-19 16:44:18,018 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:44:22,250 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:44:24,450 - document_ingester - INFO - process_directory:625 - Processing 2/15: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:44:24,470 - document_ingester - INFO - process_document:530 - Processing document: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:44:24,470 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:44:27,259 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean_2.md
+2025-07-19 16:44:30,259 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:44:37,259 - document_ingester - INFO - process_directory:625 - Processing 3/15: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 16:44:37,280 - document_ingester - INFO - process_document:530 - Processing document: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 16:44:37,280 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 16:44:38,376 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:44:41,299 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/unknown_npgrj_nn_1525_12631268_1.md
+2025-07-19 16:44:51,300 - document_ingester - INFO - process_directory:625 - Processing 4/15: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 16:44:51,374 - document_ingester - INFO - process_document:530 - Processing document: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 16:44:51,374 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 16:44:54,393 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:44:54,437 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md
+2025-07-19 16:44:56,086 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics_1.md
+2025-07-19 16:45:04,439 - document_ingester - INFO - process_directory:625 - Processing 9/15: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 16:45:04,502 - document_ingester - INFO - process_document:530 - Processing document: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 16:45:04,502 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 16:45:04,873 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:45:05,874 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:45:06,087 - document_ingester - INFO - process_directory:625 - Processing 5/15: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 16:45:06,124 - document_ingester - INFO - process_document:530 - Processing document: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 16:45:06,124 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 16:45:06,973 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:45:08,101 - document_ingester - ERROR - _extract_pdf_content:170 - Failed to extract PDF content: EOF marker not found
+2025-07-19 16:45:08,975 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:45:11,227 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:45:15,232 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:45:18,103 - document_ingester - INFO - process_directory:625 - Processing 6/15: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 16:45:18,256 - document_ingester - INFO - process_document:530 - Processing document: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 16:45:18,256 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 16:45:19,342 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:45:21,808 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions_1.md
+2025-07-19 16:45:27,350 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:45:31,808 - document_ingester - INFO - process_directory:625 - Processing 7/15: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 16:45:31,845 - document_ingester - INFO - process_document:530 - Processing document: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 16:45:31,846 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 16:45:35,564 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/x_nrn1105-henchindd_1.md
+2025-07-19 16:45:35,607 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:45:45,564 - document_ingester - INFO - process_directory:625 - Processing 8/15: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 16:45:45,608 - document_ingester - INFO - process_document:530 - Processing document: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 16:45:45,608 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 16:45:50,396 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning_1.md
+2025-07-19 16:45:51,624 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:45:51,681 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md
+2025-07-19 16:46:00,396 - document_ingester - INFO - process_directory:625 - Processing 9/15: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 16:46:00,451 - document_ingester - INFO - process_document:530 - Processing document: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 16:46:00,451 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 16:46:01,692 - document_ingester - INFO - process_directory:625 - Processing 10/15: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 16:46:01,790 - document_ingester - INFO - process_document:530 - Processing document: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 16:46:01,790 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 16:46:04,733 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease_1.md
+2025-07-19 16:46:05,024 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:46:06,025 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:46:07,144 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:46:09,146 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:46:11,252 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:46:14,733 - document_ingester - INFO - process_directory:625 - Processing 10/15: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 16:46:14,814 - document_ingester - INFO - process_document:530 - Processing document: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 16:46:14,814 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 16:46:15,257 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:46:19,364 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:46:20,744 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md
+2025-07-19 16:46:27,372 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:46:30,745 - document_ingester - INFO - process_directory:625 - Processing 11/15: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 16:46:30,908 - document_ingester - INFO - process_document:530 - Processing document: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 16:46:30,908 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 16:46:33,796 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md
+2025-07-19 16:46:35,489 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:46:43,796 - document_ingester - INFO - process_directory:625 - Processing 12/15: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 16:46:43,886 - document_ingester - INFO - process_document:530 - Processing document: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 16:46:43,886 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 16:46:46,976 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md
+2025-07-19 16:46:51,505 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:46:51,588 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation_1.md
+2025-07-19 16:46:56,976 - document_ingester - INFO - process_directory:625 - Processing 13/15: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 16:46:57,003 - document_ingester - INFO - process_document:530 - Processing document: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 16:46:57,003 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 16:47:00,366 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md
+2025-07-19 16:47:01,598 - document_ingester - INFO - process_directory:625 - Processing 11/15: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 16:47:01,755 - document_ingester - INFO - process_document:530 - Processing document: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 16:47:01,756 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 16:47:02,017 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:47:03,018 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:47:04,125 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:47:06,127 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:47:08,251 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:47:10,366 - document_ingester - INFO - process_directory:625 - Processing 14/15: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 16:47:10,479 - document_ingester - INFO - process_document:530 - Processing document: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 16:47:10,479 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 16:47:12,255 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:47:16,333 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md
+2025-07-19 16:47:16,370 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:47:24,379 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:47:26,333 - document_ingester - INFO - process_directory:625 - Processing 15/15: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 16:47:26,429 - document_ingester - INFO - process_document:530 - Processing document: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 16:47:26,429 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 16:47:32,496 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:47:37,896 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md
+2025-07-19 16:47:37,896 - document_ingester - INFO - _update_master_index:648 - Updating master index
+2025-07-19 16:47:37,897 - document_ingester - INFO - _update_master_index:693 - Master index updated successfully
+2025-07-19 16:47:48,512 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:47:48,669 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity_1.md
+2025-07-19 16:47:58,680 - document_ingester - INFO - process_directory:625 - Processing 12/15: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 16:47:58,759 - document_ingester - INFO - process_document:530 - Processing document: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 16:47:58,759 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 16:47:58,972 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:47:59,974 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:48:01,226 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:48:03,228 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:48:05,347 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:48:09,352 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:48:13,593 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:48:21,602 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:48:29,701 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:48:45,717 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:48:45,801 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease_1.md
+2025-07-19 16:48:55,812 - document_ingester - INFO - process_directory:625 - Processing 13/15: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 16:48:55,829 - document_ingester - INFO - process_document:530 - Processing document: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 16:48:55,830 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 16:48:56,389 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:48:57,390 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:48:58,498 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:49:00,501 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:49:02,595 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:49:06,599 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:49:10,739 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:49:18,747 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:49:26,857 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:49:42,874 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:49:42,894 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory_1.md
+2025-07-19 16:49:52,905 - document_ingester - INFO - process_directory:625 - Processing 14/15: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 16:49:53,012 - document_ingester - INFO - process_document:530 - Processing document: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 16:49:53,012 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 16:49:54,985 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:49:55,986 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:49:57,105 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:49:59,107 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:50:01,238 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:50:05,242 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:50:09,343 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:50:17,351 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:50:25,469 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:50:41,485 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:50:41,589 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior_1.md
+2025-07-19 16:50:51,600 - document_ingester - INFO - process_directory:625 - Processing 15/15: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 16:50:51,689 - document_ingester - INFO - process_document:530 - Processing document: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 16:50:51,689 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 16:50:59,479 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 1.0s...
+2025-07-19 16:51:00,481 - api_providers - INFO - generate_summary:287 - Retrying in 1.0s...
+2025-07-19 16:51:01,582 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 2.0s...
+2025-07-19 16:51:03,584 - api_providers - INFO - generate_summary:287 - Retrying in 2.0s...
+2025-07-19 16:51:05,695 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 4.0s...
+2025-07-19 16:51:09,699 - api_providers - INFO - generate_summary:287 - Retrying in 4.0s...
+2025-07-19 16:51:13,827 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 8.0s...
+2025-07-19 16:51:21,835 - api_providers - INFO - generate_summary:287 - Retrying in 8.0s...
+2025-07-19 16:51:29,956 - api_providers - WARNING - generate_summary:269 - Rate limited (status 429), waiting 16.0s...
+2025-07-19 16:51:45,972 - document_ingester - WARNING - _generate_markdown_summary:382 - Failed to generate AI summary, creating basic summary
+2025-07-19 16:51:46,067 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning_1.md
+2025-07-19 16:51:46,068 - document_ingester - INFO - _update_master_index:648 - Updating master index
+2025-07-19 16:51:46,068 - document_ingester - INFO - _update_master_index:693 - Master index updated successfully
+2025-07-19 16:56:36,057 - document_ingester - INFO - __init__:67 - Initialized document ingester with openai provider
+2025-07-19 16:56:36,079 - document_ingester - INFO - process_document:530 - Processing document: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:56:36,079 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:56:39,350 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean.md
+2025-07-19 16:56:48,284 - document_ingester - INFO - __init__:67 - Initialized document ingester with openai provider
+2025-07-19 16:56:48,286 - document_ingester - INFO - process_directory:598 - Processing directory: /mnt/d/_sandbox/Lit_review/79.015 Neuroscience
+2025-07-19 16:56:48,339 - document_ingester - INFO - process_directory:608 - Found 15 supported documents
+2025-07-19 16:56:48,340 - document_ingester - INFO - process_directory:612 - Waiting 15 seconds before starting to avoid rate limits...
+2025-07-19 16:57:03,340 - document_ingester - INFO - process_directory:625 - Processing 1/15: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 16:57:03,436 - document_ingester - INFO - process_document:530 - Processing document: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 16:57:03,436 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 16:57:06,391 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md
+2025-07-19 16:57:16,392 - document_ingester - INFO - process_directory:625 - Processing 2/15: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:57:16,412 - document_ingester - INFO - process_document:530 - Processing document: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:57:16,412 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 16:57:19,452 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean_1.md
+2025-07-19 16:57:29,452 - document_ingester - INFO - process_directory:625 - Processing 3/15: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 16:57:29,474 - document_ingester - INFO - process_document:530 - Processing document: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 16:57:29,474 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 16:57:34,397 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/unknown_npgrj_nn_1525_12631268.md
+2025-07-19 16:57:44,398 - document_ingester - INFO - process_directory:625 - Processing 4/15: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 16:57:44,471 - document_ingester - INFO - process_document:530 - Processing document: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 16:57:44,471 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 16:57:47,994 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md
+2025-07-19 16:57:57,995 - document_ingester - INFO - process_directory:625 - Processing 5/15: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 16:57:58,032 - document_ingester - INFO - process_document:530 - Processing document: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 16:57:58,032 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 16:58:00,014 - document_ingester - ERROR - _extract_pdf_content:170 - Failed to extract PDF content: EOF marker not found
+2025-07-19 16:58:10,015 - document_ingester - INFO - process_directory:625 - Processing 6/15: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 16:58:10,167 - document_ingester - INFO - process_document:530 - Processing document: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 16:58:10,167 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 16:58:13,594 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md
+2025-07-19 16:58:23,595 - document_ingester - INFO - process_directory:625 - Processing 7/15: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 16:58:23,633 - document_ingester - INFO - process_document:530 - Processing document: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 16:58:23,634 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 16:58:27,420 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/x_nrn1105-henchindd.md
+2025-07-19 16:58:37,421 - document_ingester - INFO - process_directory:625 - Processing 8/15: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 16:58:37,465 - document_ingester - INFO - process_document:530 - Processing document: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 16:58:37,465 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 16:58:42,924 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md
+2025-07-19 16:58:52,924 - document_ingester - INFO - process_directory:625 - Processing 9/15: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 16:58:52,979 - document_ingester - INFO - process_document:530 - Processing document: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 16:58:52,980 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 16:58:57,421 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md
+2025-07-19 16:59:07,422 - document_ingester - INFO - process_directory:625 - Processing 10/15: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 16:59:07,502 - document_ingester - INFO - process_document:530 - Processing document: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 16:59:07,503 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 16:59:14,012 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md
+2025-07-19 16:59:24,012 - document_ingester - INFO - process_directory:625 - Processing 11/15: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 16:59:24,165 - document_ingester - INFO - process_document:530 - Processing document: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 16:59:24,165 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 16:59:27,559 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md
+2025-07-19 16:59:37,560 - document_ingester - INFO - process_directory:625 - Processing 12/15: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 16:59:37,641 - document_ingester - INFO - process_document:530 - Processing document: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 16:59:37,641 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 16:59:41,088 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md
+2025-07-19 16:59:51,088 - document_ingester - INFO - process_directory:625 - Processing 13/15: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 16:59:51,104 - document_ingester - INFO - process_document:530 - Processing document: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 16:59:51,104 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 16:59:55,955 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md
+2025-07-19 17:00:05,956 - document_ingester - INFO - process_directory:625 - Processing 14/15: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 17:00:06,058 - document_ingester - INFO - process_document:530 - Processing document: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 17:00:06,058 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 17:00:12,698 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md
+2025-07-19 17:00:22,699 - document_ingester - INFO - process_directory:625 - Processing 15/15: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 17:00:22,787 - document_ingester - INFO - process_document:530 - Processing document: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 17:00:22,787 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 17:00:37,039 - document_ingester - INFO - _save_markdown_summary:496 - Saved markdown summary to: document_summaries/by_type/pdfs/xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md
+2025-07-19 17:00:37,039 - document_ingester - INFO - _update_master_index:648 - Updating master index
+2025-07-19 17:00:37,040 - document_ingester - INFO - _update_master_index:693 - Master index updated successfully
+2025-07-19 17:03:03,922 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 17:03:03,922 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 17:03:03,922 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 17:03:03,922 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 17:03:03,922 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 17:03:03,922 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 17:03:03,922 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review
+2025-07-19 17:03:03,922 - knowledge_base_builder - INFO - build_embeddings:271 - Building embeddings for knowledge base...
+2025-07-19 17:03:03,922 - semantic_search_v2 - INFO - build_embeddings_for_database:211 - Building embeddings for knowledge database using OpenAI...
+2025-07-19 17:03:03,922 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created 0 new embeddings
+2025-07-19 17:03:03,922 - knowledge_base_builder - INFO - build_embeddings:277 - Created 0 new embeddings
+2025-07-19 18:23:18,996 - document_ingester - INFO - __init__:67 - Initialized document ingester with openai provider
+2025-07-19 18:23:18,997 - document_ingester - INFO - process_directory:598 - Processing directory: /home/batesk52/CMU.49.007-Literature-Review/ /mnt/d/_sandbox/Lit_review/79.015 Neuroscience
+2025-07-19 18:23:18,997 - document_ingester - INFO - process_directory:608 - Found 0 supported documents
+2025-07-19 18:23:18,997 - document_ingester - INFO - _update_master_index:648 - Updating master index
+2025-07-19 18:23:18,997 - document_ingester - INFO - _update_master_index:693 - Master index updated successfully
+2025-07-19 18:23:33,594 - document_ingester - INFO - __init__:67 - Initialized document ingester with openai provider
+2025-07-19 18:23:33,595 - document_ingester - INFO - process_directory:598 - Processing directory: /mnt/d/_sandbox/Lit_review/79.015 Neuroscience
+2025-07-19 18:23:33,650 - document_ingester - INFO - process_directory:608 - Found 15 supported documents
+2025-07-19 18:23:33,650 - document_ingester - INFO - process_directory:612 - Waiting 15 seconds before starting to avoid rate limits...
+2025-07-19 18:23:48,665 - document_ingester - INFO - process_directory:625 - Processing 1/15: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 18:23:48,773 - document_ingester - INFO - process_document:523 - Skipping already processed file: Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf
+2025-07-19 18:23:58,783 - document_ingester - INFO - process_directory:625 - Processing 2/15: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 18:23:58,804 - document_ingester - INFO - process_document:523 - Skipping already processed file: Berke - 2018 - What does dopamine mean.pdf
+2025-07-19 18:24:08,814 - document_ingester - INFO - process_directory:625 - Processing 3/15: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 18:24:08,836 - document_ingester - INFO - process_document:523 - Skipping already processed file: Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf
+2025-07-19 18:24:18,846 - document_ingester - INFO - process_directory:625 - Processing 4/15: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 18:24:18,925 - document_ingester - INFO - process_document:523 - Skipping already processed file: Buzsáki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf
+2025-07-19 18:24:28,935 - document_ingester - INFO - process_directory:625 - Processing 5/15: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 18:24:28,974 - document_ingester - INFO - process_document:530 - Processing document: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 18:24:28,974 - document_ingester - INFO - _extract_pdf_content:123 - Extracting content from PDF: Coddington and Dudman - 2018 - The timing of action determines reward prediction signals in identified midbrain dopamine neurons.pdf
+2025-07-19 18:24:30,982 - document_ingester - ERROR - _extract_pdf_content:170 - Failed to extract PDF content: EOF marker not found
+2025-07-19 18:24:40,994 - document_ingester - INFO - process_directory:625 - Processing 6/15: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 18:24:41,153 - document_ingester - INFO - process_document:523 - Skipping already processed file: Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf
+2025-07-19 18:24:51,163 - document_ingester - INFO - process_directory:625 - Processing 7/15: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 18:24:51,204 - document_ingester - INFO - process_document:523 - Skipping already processed file: Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf
+2025-07-19 18:25:01,214 - document_ingester - INFO - process_directory:625 - Processing 8/15: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 18:25:01,258 - document_ingester - INFO - process_document:523 - Skipping already processed file: Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf
+2025-07-19 18:25:11,268 - document_ingester - INFO - process_directory:625 - Processing 9/15: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 18:25:11,324 - document_ingester - INFO - process_document:523 - Skipping already processed file: Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf
+2025-07-19 18:25:21,335 - document_ingester - INFO - process_directory:625 - Processing 10/15: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 18:25:21,418 - document_ingester - INFO - process_document:523 - Skipping already processed file: Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf
+2025-07-19 18:25:31,428 - document_ingester - INFO - process_directory:625 - Processing 11/15: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 18:25:31,588 - document_ingester - INFO - process_document:523 - Skipping already processed file: Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf
+2025-07-19 18:25:41,599 - document_ingester - INFO - process_directory:625 - Processing 12/15: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 18:25:41,680 - document_ingester - INFO - process_document:523 - Skipping already processed file: Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf
+2025-07-19 18:25:51,690 - document_ingester - INFO - process_directory:625 - Processing 13/15: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 18:25:51,707 - document_ingester - INFO - process_document:523 - Skipping already processed file: Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf
+2025-07-19 18:26:01,709 - document_ingester - INFO - process_directory:625 - Processing 14/15: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 18:26:01,819 - document_ingester - INFO - process_document:523 - Skipping already processed file: Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf
+2025-07-19 18:26:11,830 - document_ingester - INFO - process_directory:625 - Processing 15/15: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 18:26:11,920 - document_ingester - INFO - process_document:523 - Skipping already processed file: Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf
+2025-07-19 18:26:11,920 - document_ingester - INFO - _update_master_index:648 - Updating master index
+2025-07-19 18:26:11,920 - document_ingester - INFO - _update_master_index:693 - Master index updated successfully
+2025-07-19 18:31:08,557 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:31:08,557 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 18:31:08,557 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:31:08,557 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:31:08,557 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 18:31:08,558 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:31:08,558 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:31:08,558 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'what mechanisms are believed to be involved with learning?'
+2025-07-19 18:31:08,558 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'what mechanisms are believed to be involved with learning?' using OpenAI
+2025-07-19 18:31:08,984 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.7)
+2025-07-19 18:33:15,482 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:33:15,482 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 18:33:15,482 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:33:15,482 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 1 cached embeddings
+2025-07-19 18:33:15,482 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:33:15,482 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 18:33:15,483 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 1 cached embeddings
+2025-07-19 18:33:15,483 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:33:15,483 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:33:15,483 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'learning'
+2025-07-19 18:33:15,483 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'learning' using OpenAI
+2025-07-19 18:33:15,880 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.7)
+2025-07-19 18:36:37,942 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:36:37,943 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:36:37,943 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:36:37,944 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 2 cached embeddings
+2025-07-19 18:36:37,944 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:36:37,944 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:36:37,944 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 2 cached embeddings
+2025-07-19 18:36:37,944 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:36:37,944 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:36:37,945 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'learning'
+2025-07-19 18:36:37,945 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'learning' using OpenAI
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for index.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for unknown_npgrj_nn_1525_12631268.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for x_nrn1105-henchindd.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for josh_berke_what_does_dopamine_mean_1.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for josh_berke_what_does_dopamine_mean.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md, skipping
+2025-07-19 18:36:37,945 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md, skipping
+2025-07-19 18:36:37,946 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md, skipping
+2025-07-19 18:36:37,946 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md, skipping
+2025-07-19 18:36:37,946 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md, skipping
+2025-07-19 18:36:37,946 - semantic_search_v2 - WARNING - semantic_search:295 - No embedding found for da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md, skipping
+2025-07-19 18:36:37,946 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.7)
+2025-07-19 18:36:45,341 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:36:45,342 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:36:45,342 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:36:45,342 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 2 cached embeddings
+2025-07-19 18:36:45,342 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:36:45,342 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:36:45,342 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 2 cached embeddings
+2025-07-19 18:36:45,342 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:36:45,343 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:36:45,343 - knowledge_base_builder - INFO - build_embeddings:271 - Building embeddings for knowledge base...
+2025-07-19 18:36:45,343 - semantic_search_v2 - INFO - build_embeddings_for_database:219 - Building embeddings for knowledge database using OpenAI...
+2025-07-19 18:36:45,343 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 1/16: index.md
+2025-07-19 18:36:45,930 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for index.md
+2025-07-19 18:36:46,430 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 2/16: unknown_npgrj_nn_1525_12631268.md
+2025-07-19 18:36:46,593 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for unknown_npgrj_nn_1525_12631268.md
+2025-07-19 18:36:47,094 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 3/16: dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md
+2025-07-19 18:36:47,581 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md
+2025-07-19 18:36:48,081 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 4/16: xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md
+2025-07-19 18:36:48,565 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md
+2025-07-19 18:36:49,065 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 5/16: zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md
+2025-07-19 18:36:49,488 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md
+2025-07-19 18:36:49,988 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 6/16: x_nrn1105-henchindd.md
+2025-07-19 18:36:50,350 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for x_nrn1105-henchindd.md
+2025-07-19 18:36:50,851 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 7/16: josh_berke_what_does_dopamine_mean_1.md
+2025-07-19 18:36:51,369 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for josh_berke_what_does_dopamine_mean_1.md
+2025-07-19 18:36:51,869 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 8/16: josh_berke_what_does_dopamine_mean.md
+2025-07-19 18:36:52,071 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for josh_berke_what_does_dopamine_mean.md
+2025-07-19 18:36:52,571 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 9/16: mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md
+2025-07-19 18:36:52,981 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md
+2025-07-19 18:36:53,481 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 10/16: javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md
+2025-07-19 18:36:54,067 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md
+2025-07-19 18:36:54,567 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 11/16: mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md
+2025-07-19 18:36:54,798 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md
+2025-07-19 18:36:55,298 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 12/16: aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md
+2025-07-19 18:36:55,588 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md
+2025-07-19 18:36:56,088 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 13/16: anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md
+2025-07-19 18:36:56,637 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md
+2025-07-19 18:36:57,137 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 14/16: andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md
+2025-07-19 18:36:57,450 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md
+2025-07-19 18:36:57,950 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 15/16: unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md
+2025-07-19 18:36:58,177 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md
+2025-07-19 18:36:58,677 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 16/16: da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md
+2025-07-19 18:36:58,979 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md
+2025-07-19 18:36:58,979 - semantic_search_v2 - INFO - build_embeddings_for_database:254 - Created 16 new embeddings
+2025-07-19 18:36:58,979 - knowledge_base_builder - INFO - build_embeddings:277 - Created 16 new embeddings
+2025-07-19 18:37:05,759 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:37:05,759 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:37:05,759 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:37:05,761 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 18 cached embeddings
+2025-07-19 18:37:05,761 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:37:05,761 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:37:05,763 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 18 cached embeddings
+2025-07-19 18:37:05,763 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:37:05,763 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:37:05,763 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'learning'
+2025-07-19 18:37:05,763 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'learning' using OpenAI
+2025-07-19 18:37:05,766 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.7)
+2025-07-19 18:37:20,758 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:37:20,758 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:37:20,758 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:37:20,760 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 18 cached embeddings
+2025-07-19 18:37:20,760 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:37:20,761 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:37:20,762 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 18 cached embeddings
+2025-07-19 18:37:20,763 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:37:20,763 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:37:20,763 - knowledge_base_builder - INFO - search_knowledge_base:207 - Searching knowledge base for: 'learning'
+2025-07-19 18:37:20,763 - knowledge_database - INFO - search_summaries:281 - Found 5 files matching query: 'learning'
+2025-07-19 18:37:30,351 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:37:30,352 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:37:30,352 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:37:30,354 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 18 cached embeddings
+2025-07-19 18:37:30,354 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:37:30,354 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:37:30,356 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 18 cached embeddings
+2025-07-19 18:37:30,356 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:37:30,356 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:37:30,356 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'learning'
+2025-07-19 18:37:30,356 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'learning' using OpenAI
+2025-07-19 18:37:30,358 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.3)
+2025-07-19 18:37:45,887 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:37:45,887 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:37:45,887 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:37:45,889 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 18 cached embeddings
+2025-07-19 18:37:45,889 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:37:45,889 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:37:45,891 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 18 cached embeddings
+2025-07-19 18:37:45,891 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:37:45,891 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:37:45,892 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'what mechanisms are involved in neural reorganization'
+2025-07-19 18:37:45,892 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'what mechanisms are involved in neural reorganization' using OpenAI
+2025-07-19 18:37:46,382 - semantic_search_v2 - INFO - semantic_search:319 - Found 5 relevant files (threshold: 0.3)
+2025-07-19 18:40:38,769 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:40:38,770 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 18:40:38,770 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:40:38,772 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 19 cached embeddings
+2025-07-19 18:40:38,772 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:40:38,772 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 18:40:38,774 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 19 cached embeddings
+2025-07-19 18:40:38,774 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:40:38,774 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:40:38,774 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'learning'
+2025-07-19 18:40:38,774 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'learning' using OpenAI
+2025-07-19 18:40:38,774 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.7)
+2025-07-19 18:41:29,985 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:41:29,985 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 18:41:29,985 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:41:29,988 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 19 cached embeddings
+2025-07-19 18:41:29,988 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:41:29,988 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 18:41:29,990 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 19 cached embeddings
+2025-07-19 18:41:29,990 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:41:29,990 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:41:29,990 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'mechanisms involved in learning'
+2025-07-19 18:41:29,991 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'mechanisms involved in learning' using OpenAI
+2025-07-19 18:41:30,846 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.7)
+2025-07-19 18:42:31,265 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:42:31,266 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:42:31,266 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:42:31,268 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 20 cached embeddings
+2025-07-19 18:42:31,268 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:42:31,268 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:42:31,270 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 20 cached embeddings
+2025-07-19 18:42:31,270 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:42:31,270 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:42:31,270 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'mechanisms involved in learning'
+2025-07-19 18:42:31,270 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'mechanisms involved in learning' using OpenAI
+2025-07-19 18:42:31,273 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.4)
+2025-07-19 18:42:38,850 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:42:38,851 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:42:38,851 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:42:38,853 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 20 cached embeddings
+2025-07-19 18:42:38,853 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:42:38,853 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:42:38,855 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 20 cached embeddings
+2025-07-19 18:42:38,855 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:42:38,855 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:42:38,855 - knowledge_base_builder - INFO - search_knowledge_base:207 - Searching knowledge base for: 'learning'
+2025-07-19 18:42:38,855 - knowledge_database - INFO - search_summaries:281 - Found 5 files matching query: 'learning'
+2025-07-19 18:42:46,588 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:42:46,588 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:42:46,588 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:42:46,590 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 20 cached embeddings
+2025-07-19 18:42:46,590 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:42:46,590 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:42:46,592 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 20 cached embeddings
+2025-07-19 18:42:46,592 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:42:46,592 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:42:46,592 - question_answerer - INFO - answer_question:274 - Answering question: 'What mechanisms are involved in learning according to these papers?'
+2025-07-19 18:42:46,592 - question_answerer - INFO - find_relevant_files:82 - Finding files relevant to: 'What mechanisms are involved in learning according to these papers?'
+2025-07-19 18:42:46,593 - semantic_search - INFO - semantic_search:307 - Performing semantic search for: 'What mechanisms are involved in learning according to these papers?'
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for index.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for unknown_npgrj_nn_1525_12631268.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for x_nrn1105-henchindd.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for josh_berke_what_does_dopamine_mean_1.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for josh_berke_what_does_dopamine_mean.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md, skipping
+2025-07-19 18:42:46,925 - semantic_search - WARNING - semantic_search:331 - No embedding found for aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md, skipping
+2025-07-19 18:42:46,926 - semantic_search - WARNING - semantic_search:331 - No embedding found for anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md, skipping
+2025-07-19 18:42:46,926 - semantic_search - WARNING - semantic_search:331 - No embedding found for andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md, skipping
+2025-07-19 18:42:46,926 - semantic_search - WARNING - semantic_search:331 - No embedding found for unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md, skipping
+2025-07-19 18:42:46,926 - semantic_search - WARNING - semantic_search:331 - No embedding found for da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md, skipping
+2025-07-19 18:42:46,926 - semantic_search - INFO - semantic_search:354 - Found 0 relevant files (threshold: 0.6)
+2025-07-19 18:42:46,926 - question_answerer - INFO - find_relevant_files:92 - Found 0 relevant files
+2025-07-19 18:42:55,256 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:42:55,257 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:42:55,257 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:42:55,259 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 18:42:55,259 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:42:55,259 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:42:55,262 - semantic_search - INFO - _load_embeddings_cache:74 - Loaded 21 cached embeddings
+2025-07-19 18:42:55,262 - semantic_search - INFO - __init__:61 - Initialized semantic search with model: text-embedding-3-small
+2025-07-19 18:42:55,262 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:43:08,794 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:43:08,794 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:43:08,794 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:43:08,797 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 18:43:08,797 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:43:08,797 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:43:08,797 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:43:08,799 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 18:43:08,800 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:43:08,800 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:43:08,800 - question_answerer - INFO - answer_question:274 - Answering question: 'What mechanisms are involved in learning according to these papers?'
+2025-07-19 18:43:08,800 - question_answerer - INFO - find_relevant_files:82 - Finding files relevant to: 'What mechanisms are involved in learning according to these papers?'
+2025-07-19 18:43:08,800 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'What mechanisms are involved in learning according to these papers?' using OpenAI
+2025-07-19 18:43:09,400 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.6)
+2025-07-19 18:43:09,400 - question_answerer - INFO - find_relevant_files:92 - Found 0 relevant files
+2025-07-19 18:43:22,509 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:43:22,510 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:43:22,510 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:43:22,512 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 22 cached embeddings
+2025-07-19 18:43:22,512 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:43:22,513 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:43:22,513 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:43:22,515 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 22 cached embeddings
+2025-07-19 18:43:22,515 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:43:22,515 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:43:22,515 - knowledge_base_builder - INFO - build_knowledge_base:139 - Starting knowledge base build...
+2025-07-19 18:43:22,515 - knowledge_base_builder - INFO - scan_files:89 - Scanning for markdown files...
+2025-07-19 18:43:22,516 - markdown_scanner - INFO - scan_directory:115 - Found 16 markdown files in /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:43:22,516 - knowledge_base_builder - INFO - scan_files:93 - Found 16 markdown files
+2025-07-19 18:43:22,516 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 1/16: index.md
+2025-07-19 18:43:22,516 - knowledge_base_builder - INFO - process_file:107 - Processing: index.md
+2025-07-19 18:43:22,516 - markdown_summarizer_v2 - INFO - summarize_file:158 - Processing file: /home/batesk52/CMU.49.007-Literature-Review/document_summaries/index.md
+2025-07-19 18:43:26,042 - markdown_summarizer_v2 - INFO - summarize_content:143 - Successfully generated summary for /home/batesk52/CMU.49.007-Literature-Review/document_summaries/index.md
+2025-07-19 18:43:26,042 - knowledge_database - INFO - add_file:172 - Updated existing file entry: index.md
+2025-07-19 18:43:26,042 - knowledge_base_builder - INFO - process_file:124 - Successfully processed: index.md
+2025-07-19 18:43:26,543 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 2/16: unknown_npgrj_nn_1525_12631268.md
+2025-07-19 18:43:26,543 - knowledge_base_builder - INFO - process_file:107 - Processing: unknown_npgrj_nn_1525_12631268.md
+2025-07-19 18:43:26,543 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: unknown_npgrj_nn_1525_12631268.md
+2025-07-19 18:43:27,043 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 3/16: dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md
+2025-07-19 18:43:27,044 - knowledge_base_builder - INFO - process_file:107 - Processing: dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md
+2025-07-19 18:43:27,045 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md
+2025-07-19 18:43:27,545 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 4/16: xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md
+2025-07-19 18:43:27,546 - knowledge_base_builder - INFO - process_file:107 - Processing: xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md
+2025-07-19 18:43:27,546 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md
+2025-07-19 18:43:28,046 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 5/16: zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md
+2025-07-19 18:43:28,046 - knowledge_base_builder - INFO - process_file:107 - Processing: zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md
+2025-07-19 18:43:28,046 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md
+2025-07-19 18:43:28,547 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 6/16: x_nrn1105-henchindd.md
+2025-07-19 18:43:28,547 - knowledge_base_builder - INFO - process_file:107 - Processing: x_nrn1105-henchindd.md
+2025-07-19 18:43:28,547 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: x_nrn1105-henchindd.md
+2025-07-19 18:43:29,047 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 7/16: josh_berke_what_does_dopamine_mean_1.md
+2025-07-19 18:43:29,047 - knowledge_base_builder - INFO - process_file:107 - Processing: josh_berke_what_does_dopamine_mean_1.md
+2025-07-19 18:43:29,048 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: josh_berke_what_does_dopamine_mean_1.md
+2025-07-19 18:43:29,548 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 8/16: josh_berke_what_does_dopamine_mean.md
+2025-07-19 18:43:29,548 - knowledge_base_builder - INFO - process_file:107 - Processing: josh_berke_what_does_dopamine_mean.md
+2025-07-19 18:43:29,548 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: josh_berke_what_does_dopamine_mean.md
+2025-07-19 18:43:30,048 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 9/16: mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md
+2025-07-19 18:43:30,049 - knowledge_base_builder - INFO - process_file:107 - Processing: mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md
+2025-07-19 18:43:30,049 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md
+2025-07-19 18:43:30,549 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 10/16: javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md
+2025-07-19 18:43:30,549 - knowledge_base_builder - INFO - process_file:107 - Processing: javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md
+2025-07-19 18:43:30,550 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md
+2025-07-19 18:43:31,050 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 11/16: mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md
+2025-07-19 18:43:31,050 - knowledge_base_builder - INFO - process_file:107 - Processing: mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md
+2025-07-19 18:43:31,050 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md
+2025-07-19 18:43:31,551 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 12/16: aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md
+2025-07-19 18:43:31,551 - knowledge_base_builder - INFO - process_file:107 - Processing: aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md
+2025-07-19 18:43:31,551 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md
+2025-07-19 18:43:32,051 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 13/16: anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md
+2025-07-19 18:43:32,051 - knowledge_base_builder - INFO - process_file:107 - Processing: anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md
+2025-07-19 18:43:32,052 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md
+2025-07-19 18:43:32,552 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 14/16: andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md
+2025-07-19 18:43:32,552 - knowledge_base_builder - INFO - process_file:107 - Processing: andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md
+2025-07-19 18:43:32,553 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md
+2025-07-19 18:43:33,053 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 15/16: unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md
+2025-07-19 18:43:33,053 - knowledge_base_builder - INFO - process_file:107 - Processing: unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md
+2025-07-19 18:43:33,053 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md
+2025-07-19 18:43:33,554 - knowledge_base_builder - INFO - build_knowledge_base:159 - Processing file 16/16: da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md
+2025-07-19 18:43:33,554 - knowledge_base_builder - INFO - process_file:107 - Processing: da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md
+2025-07-19 18:43:33,554 - knowledge_base_builder - INFO - process_file:111 - File unchanged, skipping: da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md
+2025-07-19 18:43:33,554 - knowledge_base_builder - INFO - build_knowledge_base:171 - Cleaning up database...
+2025-07-19 18:43:33,554 - knowledge_base_builder - INFO - build_knowledge_base:175 - Saving database...
+2025-07-19 18:43:33,555 - knowledge_database - INFO - save_database:134 - Database saved to document_summaries/data/knowledge_base.json
+2025-07-19 18:43:33,555 - knowledge_base_builder - INFO - build_knowledge_base:191 - Knowledge base build completed in 11.0s
+2025-07-19 18:43:33,555 - knowledge_base_builder - INFO - build_knowledge_base:192 - Processed: 16, Failed: 0, Removed: 0
+2025-07-19 18:43:33,732 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:43:33,733 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:43:33,733 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:43:33,735 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 22 cached embeddings
+2025-07-19 18:43:33,735 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:43:33,735 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:43:33,735 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:43:33,738 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 22 cached embeddings
+2025-07-19 18:43:33,738 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:43:33,738 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:43:33,738 - knowledge_base_builder - INFO - build_embeddings:271 - Building embeddings for knowledge base...
+2025-07-19 18:43:33,738 - semantic_search_v2 - INFO - build_embeddings_for_database:219 - Building embeddings for knowledge database using OpenAI...
+2025-07-19 18:43:33,738 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 1/16: index.md
+2025-07-19 18:43:33,935 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for index.md
+2025-07-19 18:43:34,435 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 2/16: unknown_npgrj_nn_1525_12631268.md
+2025-07-19 18:43:34,435 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 3/16: dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md
+2025-07-19 18:43:34,435 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 4/16: xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md
+2025-07-19 18:43:34,435 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 5/16: zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md
+2025-07-19 18:43:34,435 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 6/16: x_nrn1105-henchindd.md
+2025-07-19 18:43:34,435 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 7/16: josh_berke_what_does_dopamine_mean_1.md
+2025-07-19 18:43:34,435 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 8/16: josh_berke_what_does_dopamine_mean.md
+2025-07-19 18:43:34,435 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 9/16: mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md
+2025-07-19 18:43:34,435 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 10/16: javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md
+2025-07-19 18:43:34,435 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 11/16: mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md
+2025-07-19 18:43:34,436 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 12/16: aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md
+2025-07-19 18:43:34,436 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 13/16: anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md
+2025-07-19 18:43:34,436 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 14/16: andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md
+2025-07-19 18:43:34,436 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 15/16: unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md
+2025-07-19 18:43:34,436 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 16/16: da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md
+2025-07-19 18:43:34,436 - semantic_search_v2 - INFO - build_embeddings_for_database:254 - Created 1 new embeddings
+2025-07-19 18:43:34,436 - knowledge_base_builder - INFO - build_embeddings:277 - Created 1 new embeddings
+2025-07-19 18:43:43,062 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:43:43,063 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:43:43,063 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:43:43,065 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 23 cached embeddings
+2025-07-19 18:43:43,065 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:43:43,065 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:43:43,066 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:43:43,068 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 23 cached embeddings
+2025-07-19 18:43:43,068 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:43:43,068 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:43:43,068 - question_answerer - INFO - answer_question:274 - Answering question: 'What are the different mechanisms of learning discussed in these neuroscience papers?'
+2025-07-19 18:43:43,068 - question_answerer - INFO - find_relevant_files:82 - Finding files relevant to: 'What are the different mechanisms of learning discussed in these neuroscience papers?'
+2025-07-19 18:43:43,068 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'What are the different mechanisms of learning discussed in these neuroscience papers?' using OpenAI
+2025-07-19 18:43:43,311 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.6)
+2025-07-19 18:43:43,312 - question_answerer - INFO - find_relevant_files:92 - Found 0 relevant files
+2025-07-19 18:45:54,830 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:45:54,830 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:45:54,831 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:45:54,831 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:45:54,831 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:45:54,831 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:45:54,831 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:45:54,831 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:45:54,831 - knowledge_base_builder - INFO - build_embeddings:271 - Building embeddings for knowledge base...
+2025-07-19 18:45:54,831 - semantic_search_v2 - INFO - build_embeddings_for_database:219 - Building embeddings for knowledge database using OpenAI...
+2025-07-19 18:45:54,831 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 1/16: index.md
+2025-07-19 18:45:55,282 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for index.md
+2025-07-19 18:45:55,782 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 2/16: unknown_npgrj_nn_1525_12631268.md
+2025-07-19 18:45:56,073 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for unknown_npgrj_nn_1525_12631268.md
+2025-07-19 18:45:56,573 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 3/16: dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md
+2025-07-19 18:45:57,019 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md
+2025-07-19 18:45:57,519 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 4/16: xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md
+2025-07-19 18:45:57,775 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md
+2025-07-19 18:45:58,275 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 5/16: zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md
+2025-07-19 18:45:58,469 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md
+2025-07-19 18:45:58,969 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 6/16: x_nrn1105-henchindd.md
+2025-07-19 18:45:59,356 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for x_nrn1105-henchindd.md
+2025-07-19 18:45:59,856 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 7/16: josh_berke_what_does_dopamine_mean_1.md
+2025-07-19 18:46:00,084 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for josh_berke_what_does_dopamine_mean_1.md
+2025-07-19 18:46:00,585 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 8/16: josh_berke_what_does_dopamine_mean.md
+2025-07-19 18:46:00,826 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for josh_berke_what_does_dopamine_mean.md
+2025-07-19 18:46:01,327 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 9/16: mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md
+2025-07-19 18:46:01,534 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md
+2025-07-19 18:46:02,035 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 10/16: javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md
+2025-07-19 18:46:02,372 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md
+2025-07-19 18:46:02,872 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 11/16: mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md
+2025-07-19 18:46:03,203 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md
+2025-07-19 18:46:03,703 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 12/16: aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md
+2025-07-19 18:46:04,051 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md
+2025-07-19 18:46:04,551 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 13/16: anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md
+2025-07-19 18:46:04,878 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md
+2025-07-19 18:46:05,378 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 14/16: andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md
+2025-07-19 18:46:05,752 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md
+2025-07-19 18:46:06,252 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 15/16: unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md
+2025-07-19 18:46:06,462 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md
+2025-07-19 18:46:06,962 - semantic_search_v2 - INFO - build_embeddings_for_database:232 - Processing embeddings 16/16: da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md
+2025-07-19 18:46:07,344 - semantic_search_v2 - INFO - build_embeddings_for_database:246 - Created embedding for da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md
+2025-07-19 18:46:07,344 - semantic_search_v2 - INFO - build_embeddings_for_database:254 - Created 16 new embeddings
+2025-07-19 18:46:07,344 - knowledge_base_builder - INFO - build_embeddings:277 - Created 16 new embeddings
+2025-07-19 18:46:27,652 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:46:27,652 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:46:27,652 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:46:27,654 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 16 cached embeddings
+2025-07-19 18:46:27,654 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:46:27,654 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:46:27,654 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:46:27,656 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 16 cached embeddings
+2025-07-19 18:46:27,656 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:46:27,656 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:46:27,656 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'learning'
+2025-07-19 18:46:27,656 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'learning' using OpenAI
+2025-07-19 18:46:27,982 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.4)
+2025-07-19 18:46:34,298 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:46:34,298 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:46:34,298 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:46:34,300 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 17 cached embeddings
+2025-07-19 18:46:34,300 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:46:34,300 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:46:34,300 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:46:34,302 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 17 cached embeddings
+2025-07-19 18:46:34,302 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:46:34,302 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:46:34,302 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'neural reorganization during learning processes'
+2025-07-19 18:46:34,302 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'neural reorganization during learning processes' using OpenAI
+2025-07-19 18:46:34,612 - semantic_search_v2 - INFO - semantic_search:319 - Found 2 relevant files (threshold: 0.4)
+2025-07-19 18:46:40,933 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:46:40,933 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:46:40,933 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:46:40,935 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 18 cached embeddings
+2025-07-19 18:46:40,935 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:46:40,936 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:46:40,936 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:46:40,938 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 18 cached embeddings
+2025-07-19 18:46:40,938 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:46:40,938 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:46:40,938 - question_answerer - INFO - answer_question:274 - Answering question: 'What are the different mechanisms of learning discussed in these neuroscience papers?'
+2025-07-19 18:46:40,938 - question_answerer - INFO - find_relevant_files:82 - Finding files relevant to: 'What are the different mechanisms of learning discussed in these neuroscience papers?'
+2025-07-19 18:46:40,938 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'What are the different mechanisms of learning discussed in these neuroscience papers?' using OpenAI
+2025-07-19 18:46:41,238 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.6)
+2025-07-19 18:46:41,238 - question_answerer - INFO - find_relevant_files:92 - Found 0 relevant files
+2025-07-19 18:46:46,718 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:46:46,718 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:46:46,718 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:46:46,720 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 19 cached embeddings
+2025-07-19 18:46:46,721 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:46:46,721 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:46:46,721 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:46:46,723 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 19 cached embeddings
+2025-07-19 18:46:46,723 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:46:46,723 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:46:46,723 - knowledge_base_builder - INFO - search_knowledge_base:207 - Searching knowledge base for: 'learning'
+2025-07-19 18:46:46,723 - knowledge_database - INFO - search_summaries:281 - Found 5 files matching query: 'learning'
+2025-07-19 18:47:02,718 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:47:02,718 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:47:02,718 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:47:02,720 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 19 cached embeddings
+2025-07-19 18:47:02,720 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:47:02,721 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:47:02,721 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:47:02,723 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 19 cached embeddings
+2025-07-19 18:47:02,723 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:47:02,723 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:47:02,723 - question_answerer - INFO - answer_question:274 - Answering question: 'What are the different mechanisms of learning discussed in these neuroscience papers?'
+2025-07-19 18:47:02,723 - question_answerer - INFO - find_relevant_files:82 - Finding files relevant to: 'What are the different mechanisms of learning discussed in these neuroscience papers?'
+2025-07-19 18:47:02,723 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'What are the different mechanisms of learning discussed in these neuroscience papers?' using OpenAI
+2025-07-19 18:47:02,725 - semantic_search_v2 - INFO - semantic_search:319 - Found 5 relevant files (threshold: 0.4)
+2025-07-19 18:47:02,725 - question_answerer - INFO - find_relevant_files:92 - Found 5 relevant files
+2025-07-19 18:47:02,725 - question_answerer - INFO - prepare_context:162 - Prepared context from 5 files (10326 characters)
+2025-07-19 18:47:07,672 - question_answerer - INFO - synthesize_answer:232 - Successfully synthesized answer
+2025-07-19 18:47:13,784 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 18:47:13,784 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:47:13,784 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:47:13,786 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 19 cached embeddings
+2025-07-19 18:47:13,786 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:47:13,786 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 18:47:13,786 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 18:47:13,789 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 19 cached embeddings
+2025-07-19 18:47:13,789 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 18:47:13,789 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 18:47:13,789 - question_answerer - INFO - answer_question:274 - Answering question: 'What role does dopamine play in learning and motivation?'
+2025-07-19 18:47:13,789 - question_answerer - INFO - find_relevant_files:82 - Finding files relevant to: 'What role does dopamine play in learning and motivation?'
+2025-07-19 18:47:13,789 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'What role does dopamine play in learning and motivation?' using OpenAI
+2025-07-19 18:47:13,936 - semantic_search_v2 - INFO - semantic_search:319 - Found 2 relevant files (threshold: 0.4)
+2025-07-19 18:47:13,937 - question_answerer - INFO - find_relevant_files:92 - Found 2 relevant files
+2025-07-19 18:47:13,937 - question_answerer - INFO - prepare_context:162 - Prepared context from 2 files (2393 characters)
+2025-07-19 18:47:18,087 - question_answerer - INFO - synthesize_answer:232 - Successfully synthesized answer
+2025-07-19 21:02:33,073 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 21:02:33,074 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 21:02:33,074 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 21:02:33,076 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 20 cached embeddings
+2025-07-19 21:02:33,076 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 21:02:33,076 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 21:02:33,076 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 21:02:33,079 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 20 cached embeddings
+2025-07-19 21:02:33,079 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 21:02:33,079 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 21:02:33,079 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'What role does dopamine play?'
+2025-07-19 21:02:33,079 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'What role does dopamine play?' using OpenAI
+2025-07-19 21:02:33,438 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.7)
+2025-07-19 21:03:23,417 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 21:03:23,417 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 21:03:23,417 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 21:03:23,420 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 21:03:23,420 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 21:03:23,420 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 21:03:23,420 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 21:03:23,422 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 21:03:23,422 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 21:03:23,422 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 21:03:23,423 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'What role does dopamine play?'
+2025-07-19 21:03:23,423 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'What role does dopamine play?' using OpenAI
+2025-07-19 21:03:23,425 - semantic_search_v2 - INFO - semantic_search:319 - Found 2 relevant files (threshold: 0.5)
+2025-07-19 21:08:49,013 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 21:08:49,013 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 21:08:49,013 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 21:08:49,015 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 21:08:49,015 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 21:08:49,015 - knowledge_database - INFO - load_database:114 - No existing database found, creating new one
+2025-07-19 21:08:49,015 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 21:08:49,017 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 21:08:49,017 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 21:08:49,017 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 21:08:49,018 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'What role does dopamine play?'
+2025-07-19 21:08:49,018 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'What role does dopamine play?' using OpenAI
+2025-07-19 21:08:49,018 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.7)
+2025-07-19 21:11:23,197 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 21:11:23,197 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 21:11:23,197 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 21:11:23,199 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 21:11:23,199 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 21:11:23,199 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 21:11:23,200 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 21:11:23,202 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 21:11:23,202 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 21:11:23,202 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 21:11:23,202 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'learning'
+2025-07-19 21:11:23,202 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'learning' using OpenAI
+2025-07-19 21:11:23,204 - semantic_search_v2 - INFO - semantic_search:319 - Found 0 relevant files (threshold: 0.4)
+2025-07-19 21:12:05,304 - markdown_summarizer_v2 - INFO - __init__:45 - Initialized summarizer with OpenAI provider
+2025-07-19 21:12:05,305 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 21:12:05,305 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 21:12:05,308 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 21:12:05,308 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 21:12:05,308 - knowledge_database - INFO - load_database:107 - Loaded database with 16 files
+2025-07-19 21:12:05,308 - semantic_search_v2 - INFO - __init__:49 - Initialized semantic search with OpenAI provider
+2025-07-19 21:12:05,311 - semantic_search_v2 - INFO - _load_embeddings_cache:70 - Loaded 21 cached embeddings
+2025-07-19 21:12:05,311 - semantic_search_v2 - INFO - __init__:57 - Initialized semantic search with OpenAI
+2025-07-19 21:12:05,311 - knowledge_base_builder - INFO - __init__:76 - Initialized knowledge base builder for /home/batesk52/CMU.49.007-Literature-Review/document_summaries
+2025-07-19 21:12:05,311 - knowledge_base_builder - INFO - semantic_search_knowledge_base:236 - Performing semantic search for: 'what role does dopamine play'
+2025-07-19 21:12:05,311 - semantic_search_v2 - INFO - semantic_search:271 - Performing semantic search for: 'what role does dopamine play' using OpenAI
+2025-07-19 21:12:05,973 - semantic_search_v2 - INFO - semantic_search:319 - Found 2 relevant files (threshold: 0.4)

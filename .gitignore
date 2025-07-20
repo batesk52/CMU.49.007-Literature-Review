@@ -26,3 +26,4 @@ Thumbs.db
 _inbox/
 *.txt
 !requirements.txt
+document_summaries/
