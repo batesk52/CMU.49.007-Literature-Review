@@ -207,24 +207,81 @@ class AudioToNotionProcessor:
         return transcript.strip()
     
     def _summarize_text(self, text: str) -> str:
-        """Summarize text using OpenAI GPT API."""
+        """Summarize text using OpenAI GPT API with chunking for long texts."""
         print("Generating summary...")
         
+        # If text is short enough, summarize directly
+        if len(text) <= 6000:  # Conservative limit to stay well under token limit
+            return self._summarize_chunk(text)
+        
+        # For long texts, split into chunks and summarize each
+        print(f"Text is {len(text)} characters long, splitting into chunks...")
+        chunks = self._split_text_for_summarization(text)
+        summaries = []
+        
+        for i, chunk in enumerate(chunks):
+            print(f"  Summarizing chunk {i+1}/{len(chunks)} ({len(chunk)} characters)...")
+            chunk_summary = self._summarize_chunk(chunk)
+            summaries.append(chunk_summary)
+        
+        # Combine summaries if there are multiple
+        if len(summaries) == 1:
+            return summaries[0]
+        else:
+            print("Combining chunk summaries...")
+            combined_summaries = "\n\n".join(summaries)
+            return self._summarize_chunk(combined_summaries, is_summary_of_summaries=True)
+    
+    def _split_text_for_summarization(self, text: str, max_length: int = 5000) -> List[str]:
+        """Split text into chunks suitable for summarization."""
+        if len(text) <= max_length:
+            return [text]
+        
+        chunks = []
+        while text:
+            if len(text) <= max_length:
+                chunks.append(text)
+                break
+            
+            # Find a good split point near the max_length
+            split_point = max_length
+            for i in range(max_length, max(0, max_length - 200), -1):
+                if text[i] in '.!?':
+                    split_point = i + 1
+                    break
+                elif text[i] == ' ':
+                    split_point = i + 1
+                    break
+            
+            chunks.append(text[:split_point])
+            text = text[split_point:].lstrip()
+        
+        return chunks
+    
+    def _summarize_chunk(self, text: str, is_summary_of_summaries: bool = False) -> str:
+        """Summarize a single chunk of text."""
         headers = {
             "Authorization": f"Bearer {self.openai_api_key}",
             "Content-Type": "application/json"
         }
+        
+        if is_summary_of_summaries:
+            system_prompt = "You are a helpful assistant that creates a final, comprehensive summary from multiple partial summaries. Combine them into one coherent, well-structured summary that captures all the key points."
+            user_prompt = f"Please create a final comprehensive summary from these partial summaries:\n\n{text}"
+        else:
+            system_prompt = "You are a helpful assistant that creates concise, informative summaries of audio transcriptions. Focus on key points, main ideas, and important details."
+            user_prompt = f"Please provide a comprehensive summary of the following audio transcription:\n\n{text}"
         
         data = {
             "model": "gpt-4",
             "messages": [
                 {
                     "role": "system",
-                    "content": "You are a helpful assistant that creates concise, informative summaries of audio transcriptions. Focus on key points, main ideas, and important details."
+                    "content": system_prompt
                 },
                 {
                     "role": "user",
-                    "content": f"Please provide a comprehensive summary of the following audio transcription:\n\n{text}"
+                    "content": user_prompt
                 }
             ],
             "max_tokens": 500,
@@ -340,23 +397,33 @@ class AudioToNotionProcessor:
                 chunks.append(text[:split_point])
                 text = text[split_point:].lstrip()
             return chunks
+        
+        # Split both transcript and summary if needed
         transcript_chunks = split_text(transcript)
-        children = [
-            {
-                "object": "block",
-                "type": "heading_2",
-                "heading_2": {
-                    "rich_text": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "Summary"
-                            }
+        summary_chunks = split_text(summary)
+        
+        # Build children blocks
+        children = []
+        
+        # Add Summary heading
+        children.append({
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Summary"
                         }
-                    ]
-                }
-            },
-            {
+                    }
+                ]
+            }
+        })
+        
+        # Add summary chunks
+        for chunk in summary_chunks:
+            children.append({
                 "object": "block",
                 "type": "paragraph",
                 "paragraph": {
@@ -364,27 +431,30 @@ class AudioToNotionProcessor:
                         {
                             "type": "text",
                             "text": {
-                                "content": summary
+                                "content": chunk
                             }
                         }
                     ]
                 }
-            },
-            {
-                "object": "block",
-                "type": "heading_2",
-                "heading_2": {
-                    "rich_text": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "Full Transcript"
-                            }
+            })
+        
+        # Add Full Transcript heading
+        children.append({
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Full Transcript"
                         }
-                    ]
-                }
+                    }
+                ]
             }
-        ]
+        })
+        
+        # Add transcript chunks
         for chunk in transcript_chunks:
             children.append({
                 "object": "block",
@@ -400,6 +470,7 @@ class AudioToNotionProcessor:
                     ]
                 }
             })
+        
         page_data = {
             "parent": {"database_id": self.notion_database_id},
             "properties": {
@@ -415,11 +486,13 @@ class AudioToNotionProcessor:
             },
             "children": children
         }
+        
         response = requests.post(
             "https://api.notion.com/v1/pages",
             headers=headers,
             json=page_data
         )
+        
         if response.status_code == 200:
             return response.json()["id"]
         else:
