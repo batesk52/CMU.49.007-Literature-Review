@@ -4,8 +4,13 @@ Test script for question answering system functionality.
 """
 
 import os
+import sys
 import tempfile
 from pathlib import Path
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from question_answerer import QuestionAnswerer
 from knowledge_database import KnowledgeDatabase
 

@@ -4,10 +4,15 @@ Unit tests for the markdown scanner module.
 """
 
 import os
+import sys
 import tempfile
 import shutil
 from pathlib import Path
 import pytest
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from markdown_scanner import MarkdownScanner
 
 

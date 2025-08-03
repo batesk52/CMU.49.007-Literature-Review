@@ -4,10 +4,14 @@ Test suite runner for the Knowledge Base system.
 Runs all unit and integration tests and provides a summary.
 """
 
+import os
 import subprocess
 import sys
 import time
 from pathlib import Path
+
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 
 def run_test_file(test_file):
@@ -47,8 +51,9 @@ def main():
     print("🧪 Knowledge Base Test Suite Runner")
     print("="*60)
     
-    # Find all test files
-    test_files = sorted(Path('.').glob('test_*.py'))
+    # Find all test files in the current tests directory
+    tests_dir = Path(os.path.dirname(os.path.abspath(__file__)))
+    test_files = sorted(tests_dir.glob('test_*.py'))
     
     if not test_files:
         print("❌ No test files found!")
@@ -98,10 +103,13 @@ def main():
     print("Running combined test report...")
     print('='*60)
     
+    # Run pytest from the parent directory to get proper coverage
+    parent_dir = os.path.dirname(tests_dir)
     combined_result = subprocess.run(
-        [sys.executable, "-m", "pytest", "-v", "--tb=short", "--cov=.", "--cov-report=term-missing"],
+        [sys.executable, "-m", "pytest", "tests/", "-v", "--tb=short", "--cov=.", "--cov-report=term-missing"],
         capture_output=True,
-        text=True
+        text=True,
+        cwd=parent_dir
     )
     
     if "pytest-cov" in combined_result.stderr:

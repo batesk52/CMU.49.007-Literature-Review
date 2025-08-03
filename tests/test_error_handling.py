@@ -4,10 +4,15 @@ Test script for error handling and logging functionality.
 """
 
 import os
+import sys
 import tempfile
 import logging
 import pytest
 from pathlib import Path
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from error_handler import (
     setup_logging, get_logger, error_handler, safe_execute, 
     validate_environment, KnowledgeBaseLogger

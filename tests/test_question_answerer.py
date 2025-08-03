@@ -7,6 +7,7 @@ to find relevant files and synthesizes answers using AI.
 """
 
 import os
+import sys
 import json
 import tempfile
 import shutil
@@ -14,6 +15,9 @@ from pathlib import Path
 from unittest.mock import Mock, patch, MagicMock, mock_open
 import pytest
 import requests
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import the module we're testing
 from question_answerer import QuestionAnswerer

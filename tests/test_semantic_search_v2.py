@@ -7,6 +7,7 @@ embeddings caching, and vector similarity calculations.
 """
 
 import os
+import sys
 import json
 import tempfile
 import shutil
@@ -15,6 +16,9 @@ from unittest.mock import Mock, patch, MagicMock, mock_open
 import pytest
 import numpy as np
 from datetime import datetime
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import the module we're testing
 from semantic_search_v2 import SemanticSearchV2

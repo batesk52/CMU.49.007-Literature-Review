@@ -7,11 +7,15 @@ including embeddings generation, text summarization, and question answering.
 """
 
 import os
+import sys
 import json
 import pytest
 from unittest.mock import Mock, patch, MagicMock
 import requests
 import time
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import the module we're testing
 from api_providers import (

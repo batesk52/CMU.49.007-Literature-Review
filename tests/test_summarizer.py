@@ -4,7 +4,12 @@ Test script for markdown summarizer functionality.
 """
 
 import os
+import sys
 from pathlib import Path
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from markdown_summarizer import MarkdownSummarizer
 
 def test_file_reading():

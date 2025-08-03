@@ -23,13 +23,28 @@ pip install -r requirements.txt
 python audio_to_notion.py
 
 # Test setup and connectivity
-python _test_setup.py
+python tests/test_setup.py
 
 # Initialize existing audio files as processed
 python _initialize_existing_files.py
 
 # Zotero to Anki converter (run the script cells)
 python zotero_to_anki.py
+```
+
+### Running Tests
+```bash
+# Run all tests
+pytest tests/
+
+# Run specific test file
+pytest tests/test_api_providers.py
+
+# Run with coverage report
+pytest tests/ --cov=. --cov-report=term-missing
+
+# Run the test suite runner
+python tests/run_all_tests.py
 ```
 
 ### Jupyter Notebooks
@@ -95,6 +110,16 @@ All tools use similar patterns for API integration:
 - **Token management**: Environment variable-based API key management
 - **Chunking strategies**: Large content is split to respect API limits (25MB for Whisper, token limits for GPT)
 
+## Testing
+
+The test suite is organized in the `tests/` directory. All test files follow the naming convention `test_*.py`.
+
+### Test Organization
+- `tests/` - Contains all test files
+- `tests/conftest.py` - Shared pytest fixtures
+- `tests/run_all_tests.py` - Test suite runner with comprehensive reporting
+- `pytest.ini` - Pytest configuration for test discovery and settings
+
 ## Development Notes
 
 - The codebase uses defensive programming patterns with extensive error handling
@@ -102,3 +127,4 @@ All tools use similar patterns for API integration:
 - OpenAI API calls include rate limiting and retry logic
 - Database operations preserve instruction rows and handle formatting standardization
 - Notion API integration handles rich text formatting and block structure requirements
+- Tests are run using pytest framework with coverage reporting available

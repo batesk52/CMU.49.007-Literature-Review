@@ -10,9 +10,13 @@ import tempfile
 import shutil
 import json
 import os
+import sys
 from pathlib import Path
 from unittest.mock import Mock, patch, MagicMock
 from datetime import datetime
+
+# Add parent directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import the modules we're testing
 from knowledge_base_builder import KnowledgeBaseBuilder
