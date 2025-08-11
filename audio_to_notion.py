@@ -66,34 +66,27 @@ class AudioToNotionProcessor:
         return mp3_files
     
     def _get_new_files(self) -> List[Path]:
-        """Identify new or modified MP3 files."""
+        """Identify new MP3 files that haven't been processed yet."""
         current_files = self._get_mp3_files()
         new_files = []
-        print(f"DEBUG: Checking {len(current_files)} MP3 files for changes...")
+        
+        # Get set of processed filenames for faster lookup
+        processed_filenames = set()
+        for state_path in self.processed_files.keys():
+            # Extract just the filename for comparison
+            # Handle both Windows and Unix path separators
+            state_filename = state_path.replace('\\', '/').split('/')[-1]
+            processed_filenames.add(state_filename)
         
         for file_path in current_files:
-            file_hash = self._get_file_hash(file_path)
-            file_path_str = str(file_path)
-            current_filename = os.path.basename(file_path_str)
+            current_filename = os.path.basename(str(file_path))
             
-            # Check if this file was processed under any path format
-            found_in_state = False
-            for state_path, state_hash in self.processed_files.items():
-                # Extract just the filename for comparison
-                # Handle both Windows and Unix path separators
-                state_filename = state_path.replace('\\', '/').split('/')[-1]
-                
-                # Check if it's the same file (by filename only, ignore hash changes)
-                # This prevents reprocessing files that have already been handled
-                if state_filename == current_filename:
-                    found_in_state = True
-                    break
-            
-            if not found_in_state:
+            # Check if this file was already processed
+            if current_filename not in processed_filenames:
                 new_files.append(file_path)
-                print(f"DEBUG: File {file_path.name} is NEW (hash: {file_hash[:8]}...)")
+                print(f"DEBUG: File {file_path.name} is NEW")
         
-        print(f"DEBUG: Found {len(new_files)} new/modified files")
+        print(f"DEBUG: Found {len(new_files)} new files to process")
         return new_files
     
     def _split_audio_if_needed(self, file_path: Path, max_bytes: int = 25 * 1024 * 1024) -> List[Path]:
