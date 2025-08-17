@@ -35,7 +35,8 @@ libraries = [
     "63.007 Qual Aim 2 - GABA, GLU NT Sensing",
     "63.008 Qual Aim 3 - ML-Enhanced Biosensing",
     "63.009 Literature Review for CMU.44.001",
-    "63.010 Literature Review for CMU.44.007"
+    "63.010 Literature Review for CMU.44.007",
+    "63.012 Cell-Specific GI Stimulation",
 ]
 
 # %%
