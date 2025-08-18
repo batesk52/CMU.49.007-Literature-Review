@@ -8,6 +8,7 @@ from typing import List, Dict, Optional
 from dotenv import load_dotenv
 from pydub import AudioSegment
 import tempfile
+import time
 
 class AudioToNotionProcessor:
     def __init__(self, folder_path: str, state_file: str = "audio_processing_state.json"):
@@ -94,32 +95,67 @@ class AudioToNotionProcessor:
         Split the audio file into smaller chunks if it exceeds max_bytes.
         Returns a list of Path objects to the chunk files (original if not split).
         """
-        if file_path.stat().st_size <= max_bytes:
+        file_size = file_path.stat().st_size
+        
+        # Use a more conservative threshold - split if over 20MB to leave buffer
+        safe_max_bytes = 20 * 1024 * 1024  # 20MB to be safe with API limits
+        
+        if file_size <= safe_max_bytes:
             return [file_path]
         
-        print(f"  File {file_path.name} is too large, attempting to split into chunks...")
+        print(f"  File {file_path.name} is {file_size / (1024*1024):.1f}MB, splitting into smaller chunks...")
         
         try:
             audio = AudioSegment.from_file(file_path)
-            chunk_length_ms = 10 * 60 * 1000  # 10 minutes in ms
+            audio_duration_minutes = len(audio) / (1000 * 60)  # Convert ms to minutes
+            
+            # Calculate optimal chunk size based on file size
+            # Aim for chunks around 10-15MB each
+            target_chunk_size = 12 * 1024 * 1024  # 12MB target
+            num_chunks = max(2, int(file_size / target_chunk_size) + 1)
+            chunk_duration_ms = len(audio) // num_chunks
+            
+            print(f"  Audio duration: {audio_duration_minutes:.1f} minutes")
+            print(f"  Splitting into {num_chunks} chunks of approximately {chunk_duration_ms / 60000:.1f} minutes each")
+            
             chunks = []
             
-            for i, start in enumerate(range(0, len(audio), chunk_length_ms)):
-                chunk = audio[start:start + chunk_length_ms]
+            for i in range(num_chunks):
+                start_ms = i * chunk_duration_ms
+                end_ms = min((i + 1) * chunk_duration_ms, len(audio))
+                
+                chunk = audio[start_ms:end_ms]
+                
                 with tempfile.NamedTemporaryFile(delete=False, suffix='.mp3') as tmp:
-                    chunk.export(tmp.name, format="mp3")
+                    # Export with compression to reduce size
+                    chunk.export(tmp.name, format="mp3", bitrate="128k")
                     chunk_path = Path(tmp.name)
+                    chunk_size = chunk_path.stat().st_size
                     
-                    if chunk_path.stat().st_size > max_bytes:
-                        # If still too big, split further (5 min)
-                        print(f"    Chunk {i+1} still too large, splitting further...")
-                        sub_chunk_length_ms = 5 * 60 * 1000
-                        for j, sub_start in enumerate(range(0, len(chunk), sub_chunk_length_ms)):
-                            sub_chunk = chunk[sub_start:sub_start + sub_chunk_length_ms]
+                    if chunk_size > max_bytes:
+                        # If still too big, split this chunk further
+                        print(f"    Chunk {i+1} is {chunk_size / (1024*1024):.1f}MB, splitting further...")
+                        
+                        # Split into smaller sub-chunks
+                        sub_chunk_duration = len(chunk) // 2
+                        for j in range(2):
+                            sub_start = j * sub_chunk_duration
+                            sub_end = len(chunk) if j == 1 else sub_chunk_duration
+                            sub_chunk = chunk[sub_start:sub_end]
+                            
                             with tempfile.NamedTemporaryFile(delete=False, suffix='.mp3') as sub_tmp:
-                                sub_chunk.export(sub_tmp.name, format="mp3")
-                                chunks.append(Path(sub_tmp.name))
+                                sub_chunk.export(sub_tmp.name, format="mp3", bitrate="128k")
+                                sub_chunk_path = Path(sub_tmp.name)
+                                print(f"      Sub-chunk {j+1}: {sub_chunk_path.stat().st_size / (1024*1024):.1f}MB")
+                                chunks.append(sub_chunk_path)
+                        
+                        # Remove the original large chunk temp file
+                        try:
+                            chunk_path.unlink()
+                        except:
+                            pass
                     else:
+                        print(f"    Chunk {i+1}: {chunk_size / (1024*1024):.1f}MB")
                         chunks.append(chunk_path)
             
             print(f"  Successfully split into {len(chunks)} chunks")
@@ -128,8 +164,8 @@ class AudioToNotionProcessor:
         except Exception as e:
             print(f"  Warning: Audio splitting failed: {str(e)}")
             print("  This might be due to missing FFmpeg. Please install FFmpeg:")
-            print("    winget install Gyan.FFmpeg")
-            print("  Or download from: https://ffmpeg.org/download.html")
+            print("    sudo apt-get update && sudo apt-get install ffmpeg")
+            print("  Or on Windows: winget install Gyan.FFmpeg")
             print("  Falling back to original file (may fail if too large)...")
             return [file_path]
     
@@ -160,34 +196,79 @@ class AudioToNotionProcessor:
                 "Authorization": f"Bearer {self.openai_api_key}"
             }
             
-            try:
-                with open(chunk_path, "rb") as audio_file:
-                    files = {"file": (chunk_path.name, audio_file, "audio/mpeg")}
-                    data = {"model": "whisper-1"}
-                    response = requests.post(
-                        "https://api.openai.com/v1/audio/transcriptions",
-                        headers=headers,
-                        files=files,
-                        data=data
-                    )
-                    if response.status_code == 200:
-                        chunk_transcript = response.json()["text"]
-                        transcript += chunk_transcript + "\n"
-                        print(f"    ✓ Chunk {idx+1} transcribed successfully ({len(chunk_transcript)} characters)")
+            # Retry logic with exponential backoff
+            max_retries = 3
+            retry_delay = 2  # Start with 2 seconds
+            
+            for attempt in range(max_retries):
+                try:
+                    with open(chunk_path, "rb") as audio_file:
+                        files = {"file": (chunk_path.name, audio_file, "audio/mpeg")}
+                        data = {"model": "whisper-1"}
+                        
+                        # Increase timeout for larger files
+                        timeout_seconds = max(120, int(chunk_size * 10))  # At least 120s, or 10s per MB
+                        print(f"    Attempt {attempt + 1}/{max_retries} with timeout of {timeout_seconds}s...")
+                        
+                        response = requests.post(
+                            "https://api.openai.com/v1/audio/transcriptions",
+                            headers=headers,
+                            files=files,
+                            data=data,
+                            timeout=timeout_seconds
+                        )
+                        
+                        if response.status_code == 200:
+                            chunk_transcript = response.json()["text"]
+                            transcript += chunk_transcript + "\n"
+                            print(f"    ✓ Chunk {idx+1} transcribed successfully ({len(chunk_transcript)} characters)")
+                            break  # Success, exit retry loop
+                        elif response.status_code == 504 or response.status_code == 502:
+                            # Gateway timeout or bad gateway - retry
+                            if attempt < max_retries - 1:
+                                print(f"    Gateway timeout/error (status {response.status_code}). Retrying in {retry_delay}s...")
+                                time.sleep(retry_delay)
+                                retry_delay *= 2  # Exponential backoff
+                                continue
+                            else:
+                                raise Exception(f"Transcription failed after {max_retries} attempts: {response.status_code}")
+                        elif response.status_code == 429:
+                            # Rate limit - wait longer
+                            wait_time = int(response.headers.get('Retry-After', retry_delay))
+                            print(f"    Rate limited. Waiting {wait_time}s before retry...")
+                            time.sleep(wait_time)
+                            continue
+                        else:
+                            error_msg = f"Transcription failed for chunk {chunk_path.name}: Status {response.status_code}"
+                            if "file too large" in response.text.lower():
+                                error_msg += f"\n    File size: {chunk_size:.1f}MB (limit: 25MB)"
+                            raise Exception(error_msg)
+                            
+                except requests.exceptions.Timeout:
+                    if attempt < max_retries - 1:
+                        print(f"    Request timeout. Retrying in {retry_delay}s...")
+                        time.sleep(retry_delay)
+                        retry_delay *= 2
+                        continue
                     else:
-                        error_msg = f"Transcription failed for chunk {chunk_path.name}: {response.text}"
-                        if "file too large" in response.text.lower():
-                            error_msg += f"\n    File size: {chunk_size:.1f}MB (limit: 25MB)"
-                        raise Exception(error_msg)
-            except Exception as e:
-                # Clean up temp files before re-raising
-                for temp_path in chunk_paths:
-                    if temp_path != file_path and temp_path.exists():
-                        try:
-                            temp_path.unlink()
-                        except Exception:
-                            pass
-                raise e
+                        raise Exception(f"Transcription timed out after {max_retries} attempts")
+                except requests.exceptions.ConnectionError as e:
+                    if attempt < max_retries - 1:
+                        print(f"    Connection error: {str(e)}. Retrying in {retry_delay}s...")
+                        time.sleep(retry_delay)
+                        retry_delay *= 2
+                        continue
+                    else:
+                        raise Exception(f"Connection failed after {max_retries} attempts: {str(e)}")
+                except Exception as e:
+                    # For other exceptions, clean up and re-raise
+                    for temp_path in chunk_paths:
+                        if temp_path != file_path and temp_path.exists():
+                            try:
+                                temp_path.unlink()
+                            except Exception:
+                                pass
+                    raise e
         
         # Clean up temp files
         for chunk_path in chunk_paths:
