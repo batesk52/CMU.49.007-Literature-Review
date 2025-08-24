@@ -24,7 +24,7 @@ from pyzotero import zotero
 # %%
 
 # name of parent deck
-PARENT_DECK = "CMU.49.007-Literature-Review"
+PARENT_DECK = "CMU.49.007-Lit-Review"
 
 # libraries I want to use
 libraries = [
