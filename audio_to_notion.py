@@ -546,7 +546,7 @@ class AudioToNotionProcessor:
             })
         
         page_data = {
-            "parent": {"database_id": self.notion_database_id},
+            "parent": {"data_source_id": self.notion_database_id},
             "properties": {
                 "Name": {
                     "title": [
