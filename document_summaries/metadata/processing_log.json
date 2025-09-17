@@ -1,0 +1,179 @@
+{
+  "processed_files": {
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Balewski et al. - 2022 - Fast and slow contributions to decision-making in corticostriatal circuits.pdf": {
+      "hash": "a583b33858c995a7f960d930697c318b",
+      "processed_at": "2025-07-19T16:57:06.391884",
+      "markdown_path": "document_summaries/by_type/pdfs/zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md",
+      "metadata": {
+        "title": "Fast and slow contributions to decision making in corticostriatal circuits",
+        "author": "Zuzanna Z. Balewski, Eric B. Knudsen, Joni D. Wallis",
+        "pages": 34,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Berke - 2018 - What does dopamine mean.pdf": {
+      "hash": "c79960309a532d832299bd723da59a89",
+      "processed_at": "2025-07-19T16:57:19.452207",
+      "markdown_path": "document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean_1.md",
+      "metadata": {
+        "title": "What does dopamine mean?",
+        "author": "Josh Berke",
+        "pages": 18,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Boyden et al. - 2005 - Millisecond-timescale, genetically targeted optical control of neural activity.pdf": {
+      "hash": "850aa33590b4de7e54216a45224370d6",
+      "processed_at": "2025-07-19T16:57:34.398075",
+      "markdown_path": "document_summaries/by_type/pdfs/unknown_npgrj_nn_1525_12631268.md",
+      "metadata": {
+        "title": "NpgRJ_NN_1525 1263..1268",
+        "author": "Unknown",
+        "pages": 6,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Buzs\u00e1ki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics.pdf": {
+      "hash": "d22a4bc102a280bfb6e2406ec49be385",
+      "processed_at": "2025-07-19T16:57:47.994688",
+      "markdown_path": "document_summaries/by_type/pdfs/unknown_buzs\u00e1ki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md",
+      "metadata": {
+        "title": "Buzs\u00e1ki et al. - 2015 - Tools for probing local circuits high-density silicon probes combined with optogenetics",
+        "author": "Unknown",
+        "pages": 32,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Evans et al. - 2018 - A synaptic threshold mechanism for computing escape decisions.pdf": {
+      "hash": "90294dfc68d483a4c89d24b726762b02",
+      "processed_at": "2025-07-19T16:58:13.594670",
+      "markdown_path": "document_summaries/by_type/pdfs/da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md",
+      "metadata": {
+        "title": "A synaptic threshold mechanism for computing escape decisions",
+        "author": "D.A Evans, A.V. Stempel, R. Vale, S. Ruehle, Y. Lefler, T. Branco",
+        "pages": 39,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Hensch - 2005 - Critical period plasticity in local cortical circuits.pdf": {
+      "hash": "6cf67bf3b596a3229ac4251e09703218",
+      "processed_at": "2025-07-19T16:58:27.420857",
+      "markdown_path": "document_summaries/by_type/pdfs/x_nrn1105-henchindd.md",
+      "metadata": {
+        "title": "nrn1105-hench.indd",
+        "author": "x",
+        "pages": 12,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Koralek et al. - 2013 - Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning.pdf": {
+      "hash": "73113bdfbecf12f8d4361adbddbdfd92",
+      "processed_at": "2025-07-19T16:58:42.924341",
+      "markdown_path": "document_summaries/by_type/pdfs/aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md",
+      "metadata": {
+        "title": "Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning",
+        "author": "Aaron C. Koralek",
+        "pages": 8,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Lucas-Romero et al. - 2024 - Noise or signal Spontaneous activity of dorsal horn neurons patterns and function in health and di.pdf": {
+      "hash": "11ea9528df08943d05a661d67ff8e4a8",
+      "processed_at": "2025-07-19T16:58:57.421832",
+      "markdown_path": "document_summaries/by_type/pdfs/javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md",
+      "metadata": {
+        "title": "Noise or signal? Spontaneous activity of dorsal horn neurons: patterns and function in health and disease",
+        "author": "Javier Lucas-Romero ",
+        "pages": 16,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Malekoshoaraie et al. - 2024 - Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemica.pdf": {
+      "hash": "9fec4e62a6a703d650b5a6bee600f8f6",
+      "processed_at": "2025-07-19T16:59:14.012161",
+      "markdown_path": "document_summaries/by_type/pdfs/mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md",
+      "metadata": {
+        "title": "Fully flexible implantable neural probes for electrophysiology recording and controlled neurochemical modulation",
+        "author": "Mohammad Hassan Malekoshoaraie",
+        "pages": 17,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Peters et al. - 2021 - Striatal activity topographically reflects cortical activity.pdf": {
+      "hash": "c4ea36bcb4ef652957e63d01889ad207",
+      "processed_at": "2025-07-19T16:59:27.560090",
+      "markdown_path": "document_summaries/by_type/pdfs/andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md",
+      "metadata": {
+        "title": "Striatal activity topographically reflects cortical activity",
+        "author": "Andrew J Peters, Julie MJ Fabre, Nicholas A Steinmetz, Kenneth D Harris, Matteo Carandini",
+        "pages": 40,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Roy et al. - 2016 - Memory retrieval by activating engram cells in mouse models of early Alzheimer's disease.pdf": {
+      "hash": "ea348512d38e7aee641fbd909de9494a",
+      "processed_at": "2025-07-19T16:59:41.088411",
+      "markdown_path": "document_summaries/by_type/pdfs/dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tom\u00e1s_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md",
+      "metadata": {
+        "title": "Memory retrieval by activating engram cells in mouse models of early Alzheimer\u2019s disease",
+        "author": "Dheeraj S. Roy, Autumn Arons, Teryn I. Mitchell, Michele Pignatelli, Tom\u00e1s J. Ryan, Susumu Tonegawa",
+        "pages": 26,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory.pdf": {
+      "hash": "ba9092eb1808d242330059440ac06d8b",
+      "processed_at": "2025-07-19T16:59:55.955824",
+      "markdown_path": "document_summaries/by_type/pdfs/mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md",
+      "metadata": {
+        "title": "Tonegawa et al. - 2018 - The role of engram cells in the systems consolidation of memory",
+        "author": "Mark M",
+        "pages": 35,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Urai et al. - 2022 - Large-scale neural recordings call for new insights to link brain and behavior.pdf": {
+      "hash": "5f7334a128efd96b393855018d7bcf91",
+      "processed_at": "2025-07-19T17:00:12.698941",
+      "markdown_path": "document_summaries/by_type/pdfs/anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md",
+      "metadata": {
+        "title": "Large-scale neural recordings call for new insights to link brain and behavior",
+        "author": "Anne E. Urai",
+        "pages": 9,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    },
+    "/mnt/d/_sandbox/Lit_review/79.015 Neuroscience/Zhou et al. - 2019 - Distinct types of neural reorganization during long-term learning.pdf": {
+      "hash": "f3a9dc7b2bdb24c15f8aa679b70b4fe9",
+      "processed_at": "2025-07-19T17:00:37.039222",
+      "markdown_path": "document_summaries/by_type/pdfs/xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md",
+      "metadata": {
+        "title": "Distinct types of neural reorganization during long-term learning",
+        "author": "Xiao Zhou, Rex N. Tien, Sadhana Ravikumar, and Steven M. Chase",
+        "pages": 13,
+        "type": "PDF"
+      },
+      "provider": "openai"
+    }
+  },
+  "statistics": {
+    "total_processed": 29,
+    "by_type": {
+      "PDF": 29
+    },
+    "last_updated": "2025-07-19T17:00:37.039232"
+  }
+}

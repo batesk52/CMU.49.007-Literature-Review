@@ -1,0 +1,4 @@
+2025-07-19 17:02:32,628 - knowledge_base_builder - ERROR - build_embeddings:281 - Failed to build embeddings: 'providers'
+2025-07-19 17:03:11,309 - knowledge_base_builder - ERROR - build_embeddings:281 - Failed to build embeddings: 'providers'
+2025-07-19 17:03:26,229 - knowledge_base_builder - ERROR - build_embeddings:281 - Failed to build embeddings: 'providers'
+2025-07-19 17:03:57,488 - knowledge_base_builder - ERROR - build_embeddings:281 - Failed to build embeddings: 'providers'

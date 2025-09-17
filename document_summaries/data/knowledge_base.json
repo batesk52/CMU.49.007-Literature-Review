@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "created_at": "2025-07-19T17:01:02.299749",
+    "last_updated": "2025-07-19T18:43:33.555036",
+    "version": "1.0",
+    "file_count": 16
+  },
+  "files": {
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/index.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/index.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/index.md",
+      "filename": "index.md",
+      "summary": "This markdown document serves as an index for a collection of 29 PDF documents, last updated in 2025. The documents primarily focus on various aspects of neuroscience, including synaptic threshold mechanisms, neural reorganization during long-term learning, and the role of engram cells in memory consolidation. The authors, page counts, and specific topics for each document are listed, providing a comprehensive overview of the collection's content.",
+      "content_length": 3855,
+      "added_to_db": "2025-07-19T17:01:05.731867",
+      "last_updated": "2025-07-19T18:43:26.042773",
+      "metadata": {
+        "size_bytes": 3861,
+        "modified_time": "2025-07-19T18:26:11.916043",
+        "created_time": "2025-07-19T18:26:11.916043",
+        "file_hash": "ab953c8c0c7eb4d4e377c4a826006133"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/unknown_npgrj_nn_1525_12631268.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/unknown_npgrj_nn_1525_12631268.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/unknown_npgrj_nn_1525_12631268.md",
+      "filename": "unknown_npgrj_nn_1525_12631268.md",
+      "summary": "This document is a scientific paper by Boyden et al., discussing the use of the algal protein Channelrhodopsin-2 to achieve precise, noninvasive control of specific neuronal populations. The main focus is on the millisecond-timescale optical control of neural activity, a significant objective in systems neuroscience. The document is technical and intended for those interested in advanced neuroscience techniques.",
+      "content_length": 1356,
+      "added_to_db": "2025-07-19T17:01:09.509878",
+      "last_updated": "2025-07-19T17:01:09.509879",
+      "metadata": {
+        "size_bytes": 1356,
+        "modified_time": "2025-07-19T16:57:34.384913",
+        "created_time": "2025-07-19T16:57:34.384913",
+        "file_hash": "ff0d6bf359b520d4c0a1d44de0c7157b"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md",
+      "filename": "dheeraj_s_roy_autumn_arons_teryn_i_mitchell_michele_pignatelli_tomás_j_ryan_susumu_tonegawa_memory_retrieval_by_activating_engram_cells_in_mouse_models_of_early_alzheimers_disease.md",
+      "summary": "This document presents a study conducted by the RIKEN-MIT Center for Neural Circuit Genetics on memory retrieval in early Alzheimer's disease using mouse models. The research primarily investigates the potential of activating engram cells as a method for memory retrieval in the early stages of the disease. The document is a detailed 26-page PDF, relevant to those interested in neuroscience, Alzheimer's research, and memory retrieval techniques.",
+      "content_length": 1493,
+      "added_to_db": "2025-07-19T17:01:14.381891",
+      "last_updated": "2025-07-19T17:01:14.381893",
+      "metadata": {
+        "size_bytes": 1496,
+        "modified_time": "2025-07-19T16:59:41.072067",
+        "created_time": "2025-07-19T16:59:41.072067",
+        "file_hash": "f9112732ae846f138361038c1e98b4e4"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md",
+      "filename": "xiao_zhou_rex_n_tien_sadhana_ravikumar_and_steven_m_chase_distinct_types_of_neural_reorganization_during_long-term_learning.md",
+      "summary": "The document \"Distinct types of neural reorganization during long-term learning\" is a research study by Xiao Zhou, Rex N. Tien, Sadhana Ravikumar, and Steven M. Chase. The study, conducted at Carnegie Mellon University, focuses on the various types of neural reorganization that take place during long-term learning. The document is a 13-page PDF and is part of a literature review in neuroscience.",
+      "content_length": 1396,
+      "added_to_db": "2025-07-19T17:01:18.814146",
+      "last_updated": "2025-07-19T17:01:18.814147",
+      "metadata": {
+        "size_bytes": 1396,
+        "modified_time": "2025-07-19T17:00:37.030810",
+        "created_time": "2025-07-19T17:00:37.030810",
+        "file_hash": "24b8bb233bd880da770b8a4da0ea8210"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md",
+      "filename": "zuzanna_z_balewski_eric_b_knudsen_joni_d_wallis_fast_and_slow_contributions_to_decision_making_in_corticostriatal_circuits.md",
+      "summary": "This document, authored by Zuzanna Z. Balewski, Eric B. Knudsen, and Joni D. Wallis, explores the role of corticostriatal circuits in decision-making processes, with a focus on both fast and slow contributions. The authors, from the University of California, Berkeley, delve into the complexities of these processes, providing technical details and research findings within the fields of neuroscience and psychology.",
+      "content_length": 1442,
+      "added_to_db": "2025-07-19T17:01:23.175943",
+      "last_updated": "2025-07-19T17:01:23.175944",
+      "metadata": {
+        "size_bytes": 1442,
+        "modified_time": "2025-07-19T16:57:06.385571",
+        "created_time": "2025-07-19T16:57:06.385571",
+        "file_hash": "625b219599a47784a6cd9f9c1e11ab44"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/x_nrn1105-henchindd.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/x_nrn1105-henchindd.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/x_nrn1105-henchindd.md",
+      "filename": "x_nrn1105-henchindd.md",
+      "summary": "This document is a 12-page PDF from the RIKEN Brain Science Institute, discussing the concepts of critical and sensitive periods in brain development. It defines the critical period as a strict time window crucial for normal development and permanent performance alteration, while the sensitive period is a limited time where experience significantly impacts the brain. The document is particularly relevant for individuals interested in developmental neuroscience.",
+      "content_length": 1346,
+      "added_to_db": "2025-07-19T17:01:27.194793",
+      "last_updated": "2025-07-19T17:01:27.194795",
+      "metadata": {
+        "size_bytes": 1346,
+        "modified_time": "2025-07-19T16:58:27.413734",
+        "created_time": "2025-07-19T16:58:27.413734",
+        "file_hash": "b2c35befa98fa43f03eb20f44a6a929d"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean_1.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean_1.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean_1.md",
+      "filename": "josh_berke_what_does_dopamine_mean_1.md",
+      "summary": "The document is an in-depth exploration of dopamine's role and significance, authored by Josh Berke from the University of California. The primary focus is on dopamine's function as a crucial modulator of learning and motivation, with a particular interest in how target cells interpret increased dopamine signals. This suggests a complex understanding of this neurotransmitter's function.",
+      "content_length": 1119,
+      "added_to_db": "2025-07-19T17:01:30.513963",
+      "last_updated": "2025-07-19T17:01:30.513964",
+      "metadata": {
+        "size_bytes": 1119,
+        "modified_time": "2025-07-19T16:57:19.445280",
+        "created_time": "2025-07-19T16:57:19.445280",
+        "file_hash": "35ba0bf4cc520ca1e7d49f51bdf9734b"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/josh_berke_what_does_dopamine_mean.md",
+      "filename": "josh_berke_what_does_dopamine_mean.md",
+      "summary": "This markdown document is a summary of a PDF by Josh Berke titled \"What does dopamine mean?\". The document discusses the role of dopamine as a critical modulator of learning and motivation, with a focus on how target cells interpret increased dopamine levels. It is particularly relevant for those interested in neuroscience and the study of neurotransmitters.",
+      "content_length": 1127,
+      "added_to_db": "2025-07-19T17:01:33.957505",
+      "last_updated": "2025-07-19T17:01:33.957507",
+      "metadata": {
+        "size_bytes": 1127,
+        "modified_time": "2025-07-19T16:56:39.346178",
+        "created_time": "2025-07-19T16:56:39.346178",
+        "file_hash": "c19de5a40dc36590c3d5e4e8622b941a"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md",
+      "filename": "mohammad_hassan_malekoshoaraie_fully_flexible_implantable_neural_probes_for_electrophysiology_recording_and_controlled_neurochemical_modulation.md",
+      "summary": "This markdown document is a summary of a scientific article by Mohammad Hassan Malekoshoaraie, published in Microsystems & Nanoengineering. The article focuses on the development and potential applications of fully flexible implantable neural probes designed for electrophysiology recording and controlled neurochemical modulation. The document likely includes technical details about the design and functionality of these neural probes.",
+      "content_length": 1523,
+      "added_to_db": "2025-07-19T17:01:38.208282",
+      "last_updated": "2025-07-19T17:01:38.208283",
+      "metadata": {
+        "size_bytes": 1523,
+        "modified_time": "2025-07-19T16:59:14.002681",
+        "created_time": "2025-07-19T16:59:14.002681",
+        "file_hash": "a19aadf76a406a8932cae9d1c8bc908c"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md",
+      "filename": "javier_lucas-romero_noise_or_signal_spontaneous_activity_of_dorsal_horn_neurons_patterns_and_function_in_health_and_disease.md",
+      "summary": "This document is a review article by Javier Lucas-Romero that investigates the spontaneous activity of dorsal horn neurons. It focuses on the patterns and functions of these neurons in both healthy and diseased states. The article, published in the European Journal of Physiology, is intended to provide insights into neuroscience and was last revised in April 2024.",
+      "content_length": 1550,
+      "added_to_db": "2025-07-19T17:01:41.581075",
+      "last_updated": "2025-07-19T17:01:41.581076",
+      "metadata": {
+        "size_bytes": 1550,
+        "modified_time": "2025-07-19T16:58:57.413057",
+        "created_time": "2025-07-19T16:58:57.413057",
+        "file_hash": "342f5207d245d98139b0c9c510048401"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md",
+      "filename": "mark_m_tonegawa_et_al_-_2018_-_the_role_of_engram_cells_in_the_systems_consolidation_of_memory.md",
+      "summary": "The document \"The role of engram cells in the systems consolidation of memory\" by Mark M. Tonegawa et al. is a 35-page scholarly article that delves into the role of engram cells in memory consolidation. The document, sourced from MIT Open Access Articles, provides an in-depth review of the subject, making it pertinent for those interested in neuroscience, particularly the specifics of memory consolidation and engram cells.",
+      "content_length": 1334,
+      "added_to_db": "2025-07-19T17:01:45.086020",
+      "last_updated": "2025-07-19T17:01:45.086021",
+      "metadata": {
+        "size_bytes": 1334,
+        "modified_time": "2025-07-19T16:59:55.941734",
+        "created_time": "2025-07-19T16:59:55.941734",
+        "file_hash": "48f707f186c7a1849243abce9b5dd4bd"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md",
+      "filename": "aaron_c_koralek_temporally_precise_cell-specific_coherence_develops_in_corticostriatal_networks_during_learning.md",
+      "summary": "This markdown document provides an overview of a scientific report by Aaron C. Koralek, titled 'Temporally Precise Cell-Specific Coherence Develops in Corticostriatal Networks during Learning'. The report investigates the development of cell-specific coherence in corticostriatal networks during learning, emphasizing the complex relationship between learning and changes in neural networks. The research was conducted at the University of California, Berkeley, and the Champalimau Centre for the Unknown.",
+      "content_length": 1593,
+      "added_to_db": "2025-07-19T17:01:50.700067",
+      "last_updated": "2025-07-19T17:01:50.700068",
+      "metadata": {
+        "size_bytes": 1593,
+        "modified_time": "2025-07-19T16:58:42.913391",
+        "created_time": "2025-07-19T16:58:42.913391",
+        "file_hash": "eb9b1db7251b7a94525d8cc07ea7cf91"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md",
+      "filename": "anne_e_urai_large-scale_neural_recordings_call_for_new_insights_to_link_brain_and_behavior.md",
+      "summary": "This markdown document is a summary of a review article by Anne E. Urai and colleagues, focusing on the need for new insights to link brain and behavior in the context of large-scale neural recordings. The document discusses the challenges and potential solutions in interpreting large-scale neural data in neuroscience research. The original research was conducted by a team from various prestigious institutions.",
+      "content_length": 1483,
+      "added_to_db": "2025-07-19T17:01:53.811567",
+      "last_updated": "2025-07-19T17:01:53.811568",
+      "metadata": {
+        "size_bytes": 1483,
+        "modified_time": "2025-07-19T17:00:12.681357",
+        "created_time": "2025-07-19T17:00:12.681357",
+        "file_hash": "3fa6fa609df5e021714d81441a65f3b4"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md",
+      "filename": "andrew_j_peters_julie_mj_fabre_nicholas_a_steinmetz_kenneth_d_harris_matteo_carandini_striatal_activity_topographically_reflects_cortical_activity.md",
+      "summary": "This markdown document is a summary of a scientific study titled \"Striatal activity topographically reflects cortical activity\" by Andrew J Peters and colleagues. The study investigates the topographical relationship between cortical and striatal activity, suggesting that the cortex's projections to the dorsal striatum regulate behavior. The document is particularly relevant to those studying neurology and behavior regulation.",
+      "content_length": 1490,
+      "added_to_db": "2025-07-19T17:01:57.685916",
+      "last_updated": "2025-07-19T17:01:57.685918",
+      "metadata": {
+        "size_bytes": 1490,
+        "modified_time": "2025-07-19T16:59:27.552391",
+        "created_time": "2025-07-19T16:59:27.552391",
+        "file_hash": "758d4efe4802be7089f8044d5ff45d10"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md",
+      "filename": "unknown_buzsáki_et_al_-_2015_-_tools_for_probing_local_circuits_high-density_silicon_probes_combined_with_optogenetics.md",
+      "summary": "The document is a detailed exploration of the use of high-density silicon probes and optogenetics as tools for probing local circuits in neuroscience. Authored by Buzsáki et al. in 2015, it delves into the technical aspects of these methodologies and their potential for enhancing our understanding of neural circuits. This document is intended for those interested in advanced neuroscience research techniques.",
+      "content_length": 1434,
+      "added_to_db": "2025-07-19T17:02:01.110408",
+      "last_updated": "2025-07-19T17:02:01.110410",
+      "metadata": {
+        "size_bytes": 1439,
+        "modified_time": "2025-07-19T16:57:47.984617",
+        "created_time": "2025-07-19T16:57:47.984617",
+        "file_hash": "0d285bac9547932a4fb2f0c57be84394"
+      }
+    },
+    "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md": {
+      "file_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md",
+      "relative_path": "/home/batesk52/CMU.49.007-Literature-Review/document_summaries/by_type/pdfs/da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md",
+      "filename": "da_evans_av_stempel_r_vale_s_ruehle_y_lefler_t_branco_a_synaptic_threshold_mechanism_for_computing_escape_decisions.md",
+      "summary": "The markdown document, \"A synaptic threshold mechanism for computing escape decisions,\" is a scientific research paper by D.A Evans and colleagues. It delves into the exploration of the synaptic threshold mechanism that influences escape decisions. The research was conducted at the MRC Laboratory of Molecular Biology and UCL Sainsbury Wellcome Centre for Neural Circuits and Behaviour.",
+      "content_length": 1361,
+      "added_to_db": "2025-07-19T17:02:04.824612",
+      "last_updated": "2025-07-19T17:02:04.824613",
+      "metadata": {
+        "size_bytes": 1361,
+        "modified_time": "2025-07-19T16:58:13.584037",
+        "created_time": "2025-07-19T16:58:13.584037",
+        "file_hash": "96ae7d03e14de12f07d0befc1bcc9c27"
+      }
+    }
+  }
+}
