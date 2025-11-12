@@ -1,17 +1,53 @@
 # CMU.49.007 Literature Review Tools
 
-This repository contains various tools for processing academic literature and audio files for research purposes.
+This repository contains a streamlined suite of tools for processing academic literature and audio files for research purposes.
 
-## Tools Included
+## Project Structure
+
+```
+CMU.49.007-Literature-Review/
+├── Core Tools (3 files):
+│   ├── audio_to_notion.py                  # Audio → Notion workflow
+│   ├── zotero_to_anki.py                   # Zotero → Anki flashcards
+│   └── summarize_paper_to_database.ipynb   # Papers → CSV database
+├── Configuration:
+│   ├── .env.example                        # Environment variables template
+│   ├── requirements.txt                    # Python dependencies
+│   └── README.md                           # This file
+├── Data (generated):
+│   ├── data/                               # Processing state
+│   ├── literature_data/                    # CSV databases
+│   └── document_summaries/                 # Generated summaries
+```
+
+## Tools Overview
 
 ### 1. Audio to Notion Processor (`audio_to_notion.py`)
-A tool that monitors a folder for new MP3 files, transcribes them using OpenAI Whisper, summarizes the content, and saves both transcript and summary to Notion.
+Monitors a folder for new MP3 files, transcribes them using OpenAI Whisper, generates AI-powered summaries, and saves both transcript and summary to Notion.
 
-### 2. Zotero to Anki Converter (`zotero_to_anki.ipynb`)
+**Features:**
+- Automatic file monitoring and change detection
+- Large file handling (splits files >25MB)
+- AI-generated titles and summaries
+- State persistence to avoid reprocessing
+
+### 2. Zotero to Anki Converter (`zotero_to_anki.py`)
 Converts Zotero annotations to Anki flashcards using OpenAI for question generation.
 
+**Features:**
+- Batch processing of 20+ Zotero collections
+- Nested deck creation by collection/author
+- Smart skipping of already-processed papers
+- GPT-4 powered Q&A generation
+
 ### 3. Paper Summarizer (`summarize_paper_to_database.ipynb`)
-Summarizes academic papers and stores them in a database.
+Extracts structured data from research papers and stores them in a CSV database.
+
+**Features:**
+- PDF text extraction and analysis
+- Identifies review vs. research papers
+- Structured metadata extraction (materials, methods, results)
+- Version-controlled database with cleaning tools
 
 ## Audio to Notion Processor Setup
 
@@ -32,18 +68,31 @@ Summarizes academic papers and stores them in a database.
 ### Installation
 
 1. Clone this repository
+
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Create a `.env` file in the project root with the following variables:
-   ```env
-   OPENAI_API_KEY=your_openai_api_key_here
-   NOTION_TOKEN=your_notion_integration_token_here
-   NOTION_DATABASE_ID=your_notion_database_id_here
-   AUDIO_FOLDER_PATH=./audio_files
+3. Set up environment variables:
+   ```bash
+   # Copy the example environment file
+   cp .env.example .env
+
+   # Edit .env and add your actual API keys and credentials
+   nano .env  # or use your preferred editor
    ```
+
+   Required environment variables:
+   - `OPENAI_API_KEY` - Your OpenAI API key
+   - `NOTION_TOKEN` - Your Notion integration token
+   - `NOTION_DATABASE_ID` - Your Notion database ID
+   - `AUDIO_FOLDER_PATH` - Path to audio files folder (optional, defaults to `./audio_files`)
+
+   For Zotero to Anki tool, also add:
+   - `ZOTERO_USER_ID` - Your Zotero user ID
+   - `ZOTERO_API_KEY` - Your Zotero API key
+   - `ZOTERO_LIBRARY_TYPE` - Usually "user" (optional)
 
 ### Notion Database Setup
 
@@ -142,11 +191,26 @@ print(stats)
 
 ## Other Tools
 
-### Zotero to Anki
-See the Jupyter notebook for converting Zotero annotations to Anki flashcards.
+### Zotero to Anki (`zotero_to_anki.py`)
+Run the Python script to convert Zotero annotations to Anki flashcards:
+```bash
+python zotero_to_anki.py
+```
 
-### Paper Summarizer
-See the Jupyter notebook for summarizing academic papers.
+**Prerequisites:**
+- Zotero account with API key
+- Anki desktop app running with AnkiConnect plugin
+- Environment variables configured (see Installation section)
+
+### Paper Summarizer (`summarize_paper_to_database.ipynb`)
+Open the Jupyter notebook to extract structured data from research papers:
+```bash
+jupyter notebook summarize_paper_to_database.ipynb
+```
+
+**Prerequisites:**
+- PDF files in the appropriate directory
+- OpenAI API key configured
 
 ## License
 

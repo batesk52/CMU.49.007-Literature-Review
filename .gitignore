@@ -24,5 +24,18 @@ Thumbs.db
 
 # Project specific
 _inbox/
-*.txt
-!requirements.txt
+audio_files/
+
+# Generated data files
+data/
+document_summaries/
+literature_data/*.csv
+
+# Log files
+*.log
+logs/
+
+# Exclude large cache files
+*.json
+!package.json
+!tsconfig.json
